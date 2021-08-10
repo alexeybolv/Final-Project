@@ -63,6 +63,7 @@ struct ContainerView<Content>: IContainer, View where Content: View & IModelView
 }
 
 extension IModelView {
+
     func showError(error: String) {
         self.viewModel?.listener?.showError(error: error)
     }

@@ -21,6 +21,6 @@ class WeatherListConfigurator: IConfigurator {
         presenter.output = view
         view.output = interactor
 
-        return view
+        return ContainerView(content: view)
     }
 }
