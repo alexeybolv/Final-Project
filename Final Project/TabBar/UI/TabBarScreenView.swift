@@ -1,19 +1,20 @@
 //
-//  ContentView.swift
+//  TabBarScreenView.swift
 //  Final Project
 //
-//  Created by Alexey Bolvonovich on 4.07.21.
+//  Created by Alexey Bolvonovich on 8.08.21.
 //
 
 import SwiftUI
 
-struct ContentView: View {
+struct TabBarScreenView: View {
 
-    @EnvironmentObject var router: Router
-    
+    var output: ITabBarScreenInteractor?
+    @ObservedObject var model: TabBarViewModel = TabBarViewModel()
+
     var body: some View {
-        TabView(selection: $router.selection) {
-            WeatherListScreenView()
+        TabView(selection: $model.selection) {
+            (ModuleConfig.shared.config(screen: WeatherListScreenView.self) as? WeatherListConfigurator)?.createScreen(nil)
                 .tabItem {
                     VStack {
                         Image(systemName: "star")
@@ -33,9 +34,14 @@ struct ContentView: View {
     }
 }
 
-struct ContentView_Previews: PreviewProvider {
+struct TabBarScreenView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
-            .environmentObject(Router())
+        TabBarScreenView()
+    }
+}
+
+extension TabBarScreenView: ITabBarScreenView {
+    var viewModel: IModel? {
+        return model
     }
 }

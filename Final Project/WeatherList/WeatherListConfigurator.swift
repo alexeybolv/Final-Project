@@ -8,11 +8,11 @@
 import SwiftUI
 import UIKit
 
-class WeatherListConfigurator: IConfugator {
+class WeatherListConfigurator: IConfigurator {
 
     static let shared = WeatherListConfigurator()
 
-    func createScreen(_ data: Any?) -> UIViewController {
+    func createScreen(_ data: Any?) -> some View {
         var view = WeatherListScreenView()
         let presenter = WeatherListPresenter()
         let interactor = WeatherListInteractor()
@@ -21,8 +21,6 @@ class WeatherListConfigurator: IConfugator {
         presenter.output = view
         view.output = interactor
 
-        let vc = UIHostingController<ContainerView<WeatherListScreenView>>(rootView: ContainerView(content: view))
-//        view.setupParent(parent: vc)
-        return vc
+        return view
     }
 }

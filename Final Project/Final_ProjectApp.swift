@@ -20,8 +20,7 @@ struct Final_ProjectApp: App {
     @Environment(\.scenePhase) private var scenePhase
     var body: some Scene {
         WindowGroup {
-            ContentView()
-                .environmentObject(Router())
+            (ModuleConfig.shared.config(screen: TabBarScreenView.self) as? TabBarScreenConfigurator)?.createScreen(nil)
         }
         .onChange(of: scenePhase) { newScenePhase in
             switch newScenePhase {

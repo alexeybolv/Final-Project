@@ -8,5 +8,5 @@
 import Foundation
 
 protocol IWeatherListScreenView: IModelView {
-    var output: IWeatherListInteractor? {get set}
+    var output: IWeatherListInteractor? { get set }
 }

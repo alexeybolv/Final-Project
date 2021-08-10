@@ -10,7 +10,7 @@ import Foundation
 import Moya
 
 public enum MoyaManager {
-    case getWeather(latitude: Double, longitue: Double)
+    case getWeather(latitude: Double, longitude: Double, language: String, appID: String)
 }
 
 extension MoyaManager: TargetType {
@@ -39,8 +39,13 @@ extension MoyaManager: TargetType {
 
     public var parameters: [String: Any]? {
         switch self {
-        case .getWeather:
-            return [:]
+        case .getWeather(let latitude, let longitude, let language, let appID):
+            return ["lat": latitude,
+                    "lon": longitude,
+                    "lang": language,
+                    "appid": appID,
+                    "exlude": "minutely",
+                    "units": "metric"]
         }
     }
 
