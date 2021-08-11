@@ -12,24 +12,32 @@ struct TabBarScreenView: View {
     var output: ITabBarScreenInteractor?
     @ObservedObject var model: TabBarViewModel = TabBarViewModel()
 
+    @State private var currentTab = 0
+
     var body: some View {
-        TabView(selection: $model.selection) {
-            (ModuleConfig.shared.config(screen: WeatherListScreenView.self) as? WeatherListConfigurator)?.createScreen(nil)
+        TabView(selection: $currentTab) {
+            (ModuleConfig.shared.config(screen: WeatherScreenView.self) as? WeatherConfigurator)?.createScreen(nil)
                 .tabItem {
                     VStack {
-                        Image(systemName: "star")
+                        Image(systemName: "cloud")
                         Text("Погода")
                     }
                 }
                 .tag(0)
+                .onAppear() {
+                    self.currentTab = 0
+                }
             ProfileScreenView()
                 .tabItem {
                     VStack {
-                        Image(systemName: "pills")
+                        Image(systemName: "person")
                         Text("Профиль")
                     }
                 }
                 .tag(1)
+                .onAppear() {
+                    self.currentTab = 1
+                }
         }
     }
 }

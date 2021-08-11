@@ -7,12 +7,12 @@
 
 import Foundation
 
-public class Weather: Decodable {
+public class Weather: Codable {
 
-    let id: Int
-    let main: String
-    let icon: URL
-    let weatherDescription: String
+    public let id: Int
+    public let main: String
+    public let icon: URL
+    public let weatherDescription: String
 
     private enum CodingKeys: String, CodingKey {
         case id, main, icon
@@ -27,6 +27,6 @@ public class Weather: Decodable {
         self.weatherDescription = try container.decode(String.self, forKey: .weatherDescription)
 
         let iconString = try container.decode(String.self, forKey: .icon)
-        self.icon = URL(string: " http://openweathermap.org/img/wn/\(iconString)@2x.png") ?? URL(fileURLWithPath: "")
+        self.icon = URL(string: "http://openweathermap.org/img/wn/\(iconString)@2x.png") ?? URL(fileURLWithPath: "")
     }
 }

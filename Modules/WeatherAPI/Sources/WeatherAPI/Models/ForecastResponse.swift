@@ -7,18 +7,20 @@
 
 import Foundation
 
-public class ForecastResponse: Decodable {
+public class ForecastResponse: Codable {
 
-    let timeZone: String?
-    let lat: Double?
-    let lon: Double?
+    public let timeZone: String?
+    public let lat: Double?
+    public let lon: Double?
 
-    let dailyForecasts: [DailyForecast]
-    let hourlyForecasts: [HourlyForecast]
+    public let currentForecast: HourlyForecast
+    public let dailyForecasts: [DailyForecast]
+    public let hourlyForecasts: [HourlyForecast]
 
     private enum CodingKeys: String, CodingKey {
         case lat, lon
         case timeZone = "timezone"
+        case currentForecast = "current"
         case dailyForecasts = "daily"
         case hourlyForecasts = "hourly"
     }
@@ -30,6 +32,7 @@ public class ForecastResponse: Decodable {
         self.lat = try container.decodeIfPresent(Double.self, forKey: .lat)
         self.lon = try container.decodeIfPresent(Double.self, forKey: .lon)
 
+        self.currentForecast = try container.decode(HourlyForecast.self, forKey: .currentForecast)
         self.dailyForecasts = try container.decode([DailyForecast].self, forKey: .dailyForecasts)
         self.hourlyForecasts = try container.decode([HourlyForecast].self, forKey: .hourlyForecasts)
     }

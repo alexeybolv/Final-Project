@@ -38,11 +38,7 @@ public struct NetworkAdapter {
                     errorCallback(error)
                 }
             case .failure(let error):
-                var errorString = error.localizedDescription
-                if errorString == "The Internet connection appears to be offline." {
-                    errorString = "Проверьте наличие интернет соединения."
-                }
-                failureCallback(errorString)
+                failureCallback(error.localizedDescription)
             }
         }
     }
