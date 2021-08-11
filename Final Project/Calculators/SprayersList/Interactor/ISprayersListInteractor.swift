@@ -9,5 +9,5 @@ import Foundation
 
 protocol ISprayersListInteractor : AnyObject {
     var output: ISprayersListPresenter? { get set }
-//    func getWeatherForecast()
+    func getSprayersList()
 }

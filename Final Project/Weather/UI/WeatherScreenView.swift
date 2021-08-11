@@ -23,6 +23,7 @@ struct WeatherScreenView: View {
                 }
             }
         }
+        .navigationTitle("Weather")
         .onAppear {
             if model.forecastResponse == nil {
                 output?.getWeatherForecast()

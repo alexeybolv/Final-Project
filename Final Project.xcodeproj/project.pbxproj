@@ -105,6 +105,7 @@
 		13C1F69D26C4557100256577 /* SprayerListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SprayerListViewModel.swift; sourceTree = "<group>"; };
 		13C1F69F26C459DD00256577 /* SprayersListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SprayersListPresenter.swift; sourceTree = "<group>"; };
 		13C1F6A126C45D9F00256577 /* SprayersListInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SprayersListInteractor.swift; sourceTree = "<group>"; };
+		13C1F6DC26C4677700256577 /* AgronomAPI */ = {isa = PBXFileReference; lastKnownFileType = folder; path = AgronomAPI; sourceTree = "<group>"; };
 		13FFB9E026AC6BD800F35285 /* WeatherAPI */ = {isa = PBXFileReference; lastKnownFileType = folder; path = WeatherAPI; sourceTree = "<group>"; };
 		13FFB9E326AC872B00F35285 /* Networking */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Networking; sourceTree = "<group>"; };
 		13FFB9EC26AD833F00F35285 /* WeatherDailyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherDailyView.swift; sourceTree = "<group>"; };
@@ -346,6 +347,7 @@
 			isa = PBXGroup;
 			children = (
 				13FFB9E326AC872B00F35285 /* Networking */,
+				13C1F6DC26C4677700256577 /* AgronomAPI */,
 				13FFB9E026AC6BD800F35285 /* WeatherAPI */,
 			);
 			path = Modules;

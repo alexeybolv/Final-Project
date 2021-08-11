@@ -11,14 +11,14 @@ class SprayersListPresenter: ISprayersListPresenter {
 
     lazy var output: ISprayersListScreenView? = nil
 
-//    func setupResponse(response: WeatherForecastResponse) {
-//        switch  response {
-//        case .error(let error):
-//            self.showError(error: error)
-//        case .success(let data):
-//            output?.updateModel(data: data)
-//        }
-//    }
+    func setupResponse(response: SprayersListResponse) {
+        switch  response {
+        case .error(let error):
+            self.showError(error: error)
+        case .success(let data):
+            output?.updateModel(data: data)
+        }
+    }
 
     func showError(error: String) {
         output?.showError(error: error)

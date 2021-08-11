@@ -9,5 +9,5 @@ import Foundation
 
 protocol ISprayersListPresenter: AnyObject, IPresenter {
     var output: ISprayersListScreenView? { get set }
-//    func setupResponse(response: WeatherForecastResponse)
+    func setupResponse(response: SprayersListResponse)
 }

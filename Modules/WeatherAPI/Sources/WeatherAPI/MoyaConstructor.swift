@@ -9,11 +9,11 @@ import Foundation
 
 import Moya
 
-public enum MoyaManager {
+public enum MoyaWeatherManager {
     case getWeather(latitude: Double, longitude: Double, language: String, appID: String)
 }
 
-extension MoyaManager: TargetType {
+extension MoyaWeatherManager: TargetType {
 
     public var baseURL: URL {
         return URL(string: "https://api.openweathermap.org") ?? URL(fileURLWithPath: "")

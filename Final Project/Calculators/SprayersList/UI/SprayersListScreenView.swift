@@ -14,7 +14,16 @@ struct SprayersListScreenView: View {
     @ObservedObject var model: SprayerListViewModel =  SprayerListViewModel()
 
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack {
+            List(model.data, id: \.id) { sprayer in
+                Text(sprayer.name)
+            }
+        }
+        .navigationTitle("Nozzles calculator")
+        .navigationBarTitleDisplayMode(.inline)
+        .onAppear {
+            output?.getSprayersList()
+        }
     }
 }
 
