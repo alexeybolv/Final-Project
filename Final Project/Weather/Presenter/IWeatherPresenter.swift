@@ -11,9 +11,3 @@ protocol IWeatherPresenter: AnyObject, IPresenter {
     var output: IWeatherScreenView? { get set }
     func setupResponse(response: WeatherForecastResponse)
 }
-
-protocol IPresenter {
-    func showError(error: String)
-    func showLoading()
-    func hideLoading()
-}

@@ -31,12 +31,6 @@ struct WeatherScreenView: View {
     }
 }
 
-struct WeatherListScreenView_Previews: PreviewProvider {
-    static var previews: some View {
-        WeatherScreenView()
-    }
-}
-
 extension WeatherScreenView: IWeatherScreenView {
 
     var viewModel: IModel? {
@@ -45,5 +39,11 @@ extension WeatherScreenView: IWeatherScreenView {
 
     func updateModel(data: Any?) {
         self.model.update(data: data)
+    }
+}
+
+struct WeatherListScreenView_Previews: PreviewProvider {
+    static var previews: some View {
+        WeatherScreenView()
     }
 }
