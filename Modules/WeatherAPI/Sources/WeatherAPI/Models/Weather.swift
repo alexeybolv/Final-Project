@@ -7,7 +7,7 @@
 
 import Foundation
 
-public class Weather: Decodable {
+public class Weather: Codable {
 
     public let id: Int
     public let main: String

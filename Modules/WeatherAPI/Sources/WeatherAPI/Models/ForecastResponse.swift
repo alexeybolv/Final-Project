@@ -7,7 +7,7 @@
 
 import Foundation
 
-public class ForecastResponse: Decodable {
+public class ForecastResponse: Codable {
 
     public let timeZone: String?
     public let lat: Double?

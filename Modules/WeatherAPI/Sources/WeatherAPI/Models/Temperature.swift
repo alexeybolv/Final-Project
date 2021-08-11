@@ -7,7 +7,7 @@
 
 import Foundation
 
-public class Temperature: Decodable {
+public class Temperature: Codable {
 
     public let day: Double
     public let night: Double

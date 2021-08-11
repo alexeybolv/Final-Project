@@ -7,6 +7,8 @@
 
 import Foundation
 
+import WeatherAPI
+
 class WeatherPresenter: IWeatherPresenter {
 
     lazy var output: IWeatherScreenView? = nil
@@ -15,6 +17,11 @@ class WeatherPresenter: IWeatherPresenter {
         switch  response {
         case .error(let error):
             self.showError(error: error)
+            if let forecastResponseData = UserDefaults.standard.object(forKey: GlobalStrings.weatherResponseStorageKey) as? Data {
+                if let forecastResponse = try? JSONDecoder().decode(ForecastResponse.self, from: forecastResponseData) {
+                    output?.updateModel(data: forecastResponse)
+                }
+            }
         case .success(let data):
             output?.updateModel(data: data)
         }

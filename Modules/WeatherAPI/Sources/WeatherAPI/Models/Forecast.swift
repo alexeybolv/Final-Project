@@ -7,7 +7,7 @@
 
 import Foundation
 
-public class Forecast: Decodable {
+public class Forecast: Codable {
 
     public let dateDouble: Double
     public let date: Date
