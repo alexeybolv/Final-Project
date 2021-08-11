@@ -9,9 +9,10 @@ import Foundation
 
 public class Forecast: Decodable {
 
-    let date: Date
-    let humidity: Int
-    let weather: Weather?
+    public let dateDouble: Double
+    public let date: Date
+    public let humidity: Int
+    public let weather: Weather?
 
     private enum CodingKeys: String, CodingKey {
         case date = "dt"
@@ -21,7 +22,7 @@ public class Forecast: Decodable {
     required public init(from decoder: Decoder) throws {
         let container = try decoder.container(keyedBy: CodingKeys.self)
 
-        let dateDouble = try container.decode(Double.self, forKey: .date)
+        self.dateDouble = try container.decode(Double.self, forKey: .date)
         self.date = Date(timeIntervalSince1970: dateDouble)
         self.humidity = try container.decode(Int.self, forKey: .humidity)
 
@@ -32,7 +33,7 @@ public class Forecast: Decodable {
 
 public class HourlyForecast: Forecast {
 
-    let temperature: Double
+    public let temperature: Double
 
     private enum CodingKeys: String, CodingKey {
         case temperature = "temp"
@@ -48,7 +49,7 @@ public class HourlyForecast: Forecast {
 
 public class DailyForecast: Forecast {
 
-    let temperature: Temperature
+    public let temperature: Temperature
 
     private enum CodingKeys: String, CodingKey {
         case temperature = "temp"
