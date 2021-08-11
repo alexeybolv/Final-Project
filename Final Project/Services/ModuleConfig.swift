@@ -25,6 +25,9 @@ class ModuleConfig {
         if screen == WeatherScreenView.self {
             return WeatherConfigurator.shared
         }
+        if screen == SprayersListScreenView.self {
+            return SprayersListConfigurator.shared
+        }
         return TabBarScreenConfigurator.shared
     }
 }

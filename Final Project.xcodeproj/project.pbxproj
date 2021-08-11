@@ -36,6 +36,15 @@
 		13C1F68726C3263E00256577 /* Date+Format.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13C1F68626C3263E00256577 /* Date+Format.swift */; };
 		13C1F68926C3CF9000256577 /* WeatherHourlyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13C1F68826C3CF9000256577 /* WeatherHourlyView.swift */; };
 		13C1F68B26C4455D00256577 /* GlobalStrings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13C1F68A26C4455D00256577 /* GlobalStrings.swift */; };
+		13C1F69026C4505700256577 /* SprayersListScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13C1F68F26C4505700256577 /* SprayersListScreenView.swift */; };
+		13C1F69226C4509C00256577 /* SprayersListConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13C1F69126C4509C00256577 /* SprayersListConfigurator.swift */; };
+		13C1F69426C450EB00256577 /* ISprayersListScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13C1F69326C450EB00256577 /* ISprayersListScreenView.swift */; };
+		13C1F69826C4519900256577 /* ISprayersListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13C1F69726C4519900256577 /* ISprayersListPresenter.swift */; };
+		13C1F69A26C451AA00256577 /* ISprayersListInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13C1F69926C451AA00256577 /* ISprayersListInteractor.swift */; };
+		13C1F69C26C4545D00256577 /* IPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13C1F69B26C4545D00256577 /* IPresenter.swift */; };
+		13C1F69E26C4557100256577 /* SprayerListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13C1F69D26C4557100256577 /* SprayerListViewModel.swift */; };
+		13C1F6A026C459DD00256577 /* SprayersListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13C1F69F26C459DD00256577 /* SprayersListPresenter.swift */; };
+		13C1F6A226C45D9F00256577 /* SprayersListInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13C1F6A126C45D9F00256577 /* SprayersListInteractor.swift */; };
 		13FFB9ED26AD833F00F35285 /* WeatherDailyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13FFB9EC26AD833F00F35285 /* WeatherDailyView.swift */; };
 		13FFB9F026AD8C4600F35285 /* SDWebImageSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = 13FFB9EF26AD8C4600F35285 /* SDWebImageSwiftUI */; };
 		13FFB9F226AD927800F35285 /* WeatherInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13FFB9F126AD927800F35285 /* WeatherInteractor.swift */; };
@@ -87,6 +96,16 @@
 		13C1F68626C3263E00256577 /* Date+Format.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Format.swift"; sourceTree = "<group>"; };
 		13C1F68826C3CF9000256577 /* WeatherHourlyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherHourlyView.swift; sourceTree = "<group>"; };
 		13C1F68A26C4455D00256577 /* GlobalStrings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalStrings.swift; sourceTree = "<group>"; };
+		13C1F68F26C4505700256577 /* SprayersListScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SprayersListScreenView.swift; sourceTree = "<group>"; };
+		13C1F69126C4509C00256577 /* SprayersListConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SprayersListConfigurator.swift; sourceTree = "<group>"; };
+		13C1F69326C450EB00256577 /* ISprayersListScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ISprayersListScreenView.swift; sourceTree = "<group>"; };
+		13C1F69726C4519900256577 /* ISprayersListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ISprayersListPresenter.swift; sourceTree = "<group>"; };
+		13C1F69926C451AA00256577 /* ISprayersListInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ISprayersListInteractor.swift; sourceTree = "<group>"; };
+		13C1F69B26C4545D00256577 /* IPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IPresenter.swift; sourceTree = "<group>"; };
+		13C1F69D26C4557100256577 /* SprayerListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SprayerListViewModel.swift; sourceTree = "<group>"; };
+		13C1F69F26C459DD00256577 /* SprayersListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SprayersListPresenter.swift; sourceTree = "<group>"; };
+		13C1F6A126C45D9F00256577 /* SprayersListInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SprayersListInteractor.swift; sourceTree = "<group>"; };
+		13C1F6DC26C4677700256577 /* AgronomAPI */ = {isa = PBXFileReference; lastKnownFileType = folder; path = AgronomAPI; sourceTree = "<group>"; };
 		13FFB9E026AC6BD800F35285 /* WeatherAPI */ = {isa = PBXFileReference; lastKnownFileType = folder; path = WeatherAPI; sourceTree = "<group>"; };
 		13FFB9E326AC872B00F35285 /* Networking */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Networking; sourceTree = "<group>"; };
 		13FFB9EC26AD833F00F35285 /* WeatherDailyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherDailyView.swift; sourceTree = "<group>"; };
@@ -208,8 +227,8 @@
 				13B1981826BDD072008C8094 /* CommonUI */,
 				13BDE67126930474004A6AB7 /* Services */,
 				137B12FF26C05DAC0033622C /* TabBar */,
-				13BDE67C26931FFD004A6AB7 /* Calculators */,
 				13BDE67426930B04004A6AB7 /* Weather */,
+				13BDE67C26931FFD004A6AB7 /* Calculators */,
 				13BDE6792693185F004A6AB7 /* Profile */,
 				13BDE64626923867004A6AB7 /* Final_ProjectApp.swift */,
 				13C1F68A26C4455D00256577 /* GlobalStrings.swift */,
@@ -244,6 +263,7 @@
 			children = (
 				13B1980F26BDCB4C008C8094 /* Navigator.swift */,
 				13B1981126BDCC07008C8094 /* ModuleConfig.swift */,
+				13C1F69B26C4545D00256577 /* IPresenter.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -271,6 +291,7 @@
 		13BDE67C26931FFD004A6AB7 /* Calculators */ = {
 			isa = PBXGroup;
 			children = (
+				13C1F68D26C44FF300256577 /* SprayersList */,
 			);
 			path = Calculators;
 			sourceTree = "<group>";
@@ -283,10 +304,50 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
+		13C1F68D26C44FF300256577 /* SprayersList */ = {
+			isa = PBXGroup;
+			children = (
+				13C1F68E26C4501500256577 /* UI */,
+				13C1F69526C4514A00256577 /* Presenter */,
+				13C1F69626C4515400256577 /* Interactor */,
+				13C1F69D26C4557100256577 /* SprayerListViewModel.swift */,
+				13C1F69126C4509C00256577 /* SprayersListConfigurator.swift */,
+			);
+			path = SprayersList;
+			sourceTree = "<group>";
+		};
+		13C1F68E26C4501500256577 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				13C1F69326C450EB00256577 /* ISprayersListScreenView.swift */,
+				13C1F68F26C4505700256577 /* SprayersListScreenView.swift */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		13C1F69526C4514A00256577 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				13C1F69726C4519900256577 /* ISprayersListPresenter.swift */,
+				13C1F69F26C459DD00256577 /* SprayersListPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		13C1F69626C4515400256577 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				13C1F69926C451AA00256577 /* ISprayersListInteractor.swift */,
+				13C1F6A126C45D9F00256577 /* SprayersListInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
 		13FFB9DF26AC6B8100F35285 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
 				13FFB9E326AC872B00F35285 /* Networking */,
+				13C1F6DC26C4677700256577 /* AgronomAPI */,
 				13FFB9E026AC6BD800F35285 /* WeatherAPI */,
 			);
 			path = Modules;
@@ -423,21 +484,29 @@
 			files = (
 				133B270426BB12E300052657 /* WeatherViewModel.swift in Sources */,
 				13C1F68426C3228C00256577 /* WeatherCurrentView.swift in Sources */,
+				13C1F6A026C459DD00256577 /* SprayersListPresenter.swift in Sources */,
 				13B1981C26BDD0C8008C8094 /* ActivityIndicator.swift in Sources */,
+				13C1F69226C4509C00256577 /* SprayersListConfigurator.swift in Sources */,
 				13B1981026BDCB4C008C8094 /* Navigator.swift in Sources */,
 				137B12B926BDD5990033622C /* ContainerModel.swift in Sources */,
 				13C1F68B26C4455D00256577 /* GlobalStrings.swift in Sources */,
 				13FFB9F226AD927800F35285 /* WeatherInteractor.swift in Sources */,
 				13B1981A26BDD09C008C8094 /* LoaderView.swift in Sources */,
+				13C1F69E26C4557100256577 /* SprayerListViewModel.swift in Sources */,
 				13FFB9F926AD955100F35285 /* WeatherPresenter.swift in Sources */,
+				13C1F69826C4519900256577 /* ISprayersListPresenter.swift in Sources */,
 				137B12F826BEA2F10033622C /* IWeatherScreenView.swift in Sources */,
 				137B12F326BE9BAB0033622C /* IWeatherInteractor.swift in Sources */,
+				13C1F69C26C4545D00256577 /* IPresenter.swift in Sources */,
 				137B12F626BEA1F00033622C /* IWeatherPresenter.swift in Sources */,
+				13C1F69426C450EB00256577 /* ISprayersListScreenView.swift in Sources */,
 				13B1981226BDCC07008C8094 /* ModuleConfig.swift in Sources */,
 				13BDE678269317D0004A6AB7 /* WeatherScreenView.swift in Sources */,
+				13C1F69A26C451AA00256577 /* ISprayersListInteractor.swift in Sources */,
 				13FFB9ED26AD833F00F35285 /* WeatherDailyView.swift in Sources */,
 				137B130926C05F520033622C /* ITabBarScreenInteractor.swift in Sources */,
 				137B130126C05DCC0033622C /* TabBarScreenView.swift in Sources */,
+				13C1F69026C4505700256577 /* SprayersListScreenView.swift in Sources */,
 				13BDE64726923867004A6AB7 /* Final_ProjectApp.swift in Sources */,
 				137B130D26C060B50033622C /* TabBarViewModel.swift in Sources */,
 				137B130626C05ED70033622C /* ITabBarScreenView.swift in Sources */,
@@ -448,6 +517,7 @@
 				13BDE67B269318FE004A6AB7 /* ProfileScreenView.swift in Sources */,
 				13B1981426BDCC96008C8094 /* WeatherConfigurator.swift in Sources */,
 				137B130426C05E630033622C /* TabBarScreenConfigurator.swift in Sources */,
+				13C1F6A226C45D9F00256577 /* SprayersListInteractor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

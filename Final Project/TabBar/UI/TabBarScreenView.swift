@@ -27,6 +27,19 @@ struct TabBarScreenView: View {
                 .onAppear() {
                     self.currentTab = 0
                 }
+            NavigationView {
+                (ModuleConfig.shared.config(screen: SprayersListScreenView.self) as? SprayersListConfigurator)?.createScreen(nil)
+            }
+            .tabItem {
+                VStack {
+                    Image(systemName: "list.number")
+                    Text("Калькулятор")
+                }
+            }
+            .tag(1)
+            .onAppear() {
+                self.currentTab = 1
+            }
             ProfileScreenView()
                 .tabItem {
                     VStack {
@@ -34,9 +47,9 @@ struct TabBarScreenView: View {
                         Text("Профиль")
                     }
                 }
-                .tag(1)
+                .tag(2)
                 .onAppear() {
-                    self.currentTab = 1
+                    self.currentTab = 2
                 }
         }
     }
