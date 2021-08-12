@@ -8,8 +8,6 @@
 import WidgetKit
 import SwiftUI
 
-import WeatherAPI
-
 struct WeatherEntry: TimelineEntry {
     let date = Date()
     let currentForecast: WidgetWeather
