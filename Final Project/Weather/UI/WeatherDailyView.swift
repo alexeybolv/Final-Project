@@ -20,9 +20,11 @@ struct WeatherDailyView: View {
                 Text(data.date.formatToString("EEEE"))
                     .fontWeight(.medium)
                     .font(.system(size: 16.0))
+                Spacer()
+                Text("\(Int(data.temperature.day))°/\(Int(data.temperature.night))°")
             }
+            .frame(maxWidth: .infinity, maxHeight: 40.0)
         }
-        .background(Color.blue)
     }
 }
 

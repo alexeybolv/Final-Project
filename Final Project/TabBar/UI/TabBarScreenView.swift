@@ -20,7 +20,7 @@ struct TabBarScreenView: View {
                 .tabItem {
                     VStack {
                         Image(systemName: "cloud")
-                        Text("Погода")
+                        Text("Weather")
                     }
                 }
                 .tag(0)
@@ -33,7 +33,7 @@ struct TabBarScreenView: View {
             .tabItem {
                 VStack {
                     Image(systemName: "list.number")
-                    Text("Калькулятор")
+                    Text("Calculator")
                 }
             }
             .tag(1)
@@ -44,7 +44,7 @@ struct TabBarScreenView: View {
                 .tabItem {
                     VStack {
                         Image(systemName: "person")
-                        Text("Профиль")
+                        Text("Profile")
                     }
                 }
                 .tag(2)

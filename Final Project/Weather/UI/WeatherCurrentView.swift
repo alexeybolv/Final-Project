@@ -31,6 +31,10 @@ struct WeatherCurrentView: View {
                 .font(.system(size: 80.0))
                 .fontWeight(.light)
                 .foregroundColor(.yellow)
+                .padding()
+                .overlay(
+                        RoundedRectangle(cornerRadius: 16)
+                            .stroke(data.currentForecast.suitableForWork ? Color.green : Color.gray, lineWidth: 4))
             Text(data.currentForecast.weather?.main ?? "")
                 .font(.system(size: 14.0))
                 .fontWeight(.medium)
