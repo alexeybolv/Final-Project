@@ -5,7 +5,7 @@
 //  Created by Alexey Bolvonovich on 25.07.21.
 //
 
-import Foundation
+import SwiftUI
 
 import Moya
 import Networking
@@ -22,6 +22,9 @@ class WeatherInteractor: IWeatherInteractor {
 
     var output: IWeatherPresenter?
 
+    @AppStorage("widgetWeatherData", store: UserDefaults(suiteName: "group.com.alexeybolv.agronom"))
+    var widgetWeatherData: Data = Data()
+
     // MARK: - API
 
     func getWeatherForecast() {
@@ -30,6 +33,12 @@ class WeatherInteractor: IWeatherInteractor {
             self.output?.hideLoading()
             do {
                 let forecastResponse = try JSONDecoder().decode(ForecastResponse.self, from: response.data)
+
+                let widgetWeather = WidgetWeather(date: Date(), temperature: forecastResponse.currentForecast.temperature, weatherName: forecastResponse.currentForecast.weather?.main ?? "", icon: forecastResponse.currentForecast.weather?.icon)
+                if let widgetWeatherData = try? JSONEncoder().encode(widgetWeather) {
+                    self.widgetWeatherData = widgetWeatherData
+                }
+
                 UserDefaults.standard.set(response.data, forKey: GlobalStrings.weatherResponseStorageKey)
                 self.output?.setupResponse(response: .success(response: forecastResponse))
             } catch {

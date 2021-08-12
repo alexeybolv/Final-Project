@@ -45,6 +45,16 @@
 		13C1F69E26C4557100256577 /* SprayerListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13C1F69D26C4557100256577 /* SprayerListViewModel.swift */; };
 		13C1F6A026C459DD00256577 /* SprayersListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13C1F69F26C459DD00256577 /* SprayersListPresenter.swift */; };
 		13C1F6A226C45D9F00256577 /* SprayersListInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13C1F6A126C45D9F00256577 /* SprayersListInteractor.swift */; };
+		13C1F6E426C4912700256577 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 13C1F6E326C4912700256577 /* WidgetKit.framework */; };
+		13C1F6E626C4912700256577 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 13C1F6E526C4912700256577 /* SwiftUI.framework */; };
+		13C1F6E926C4912700256577 /* Agronom_Widget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13C1F6E826C4912700256577 /* Agronom_Widget.swift */; };
+		13C1F6EC26C4912A00256577 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13C1F6EB26C4912A00256577 /* Assets.xcassets */; };
+		13C1F6EE26C4912A00256577 /* Agronom_Widget.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 13C1F6EA26C4912700256577 /* Agronom_Widget.intentdefinition */; };
+		13C1F6EF26C4912A00256577 /* Agronom_Widget.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 13C1F6EA26C4912700256577 /* Agronom_Widget.intentdefinition */; };
+		13C1F6F226C4912A00256577 /* Agronom WidgetExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 13C1F6E226C4912700256577 /* Agronom WidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		13C1F6F926C4F6EF00256577 /* WidgetWeather.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13C1F6F826C4F6EF00256577 /* WidgetWeather.swift */; };
+		13C1F6FA26C4F7B400256577 /* WidgetWeather.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13C1F6F826C4F6EF00256577 /* WidgetWeather.swift */; };
+		13C1F6FC26C5068A00256577 /* Date+Format.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13C1F68626C3263E00256577 /* Date+Format.swift */; };
 		13FFB9ED26AD833F00F35285 /* WeatherDailyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13FFB9EC26AD833F00F35285 /* WeatherDailyView.swift */; };
 		13FFB9F026AD8C4600F35285 /* SDWebImageSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = 13FFB9EF26AD8C4600F35285 /* SDWebImageSwiftUI */; };
 		13FFB9F226AD927800F35285 /* WeatherInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13FFB9F126AD927800F35285 /* WeatherInteractor.swift */; };
@@ -61,7 +71,28 @@
 			remoteGlobalIDString = 13BDE64226923867004A6AB7;
 			remoteInfo = "Final Project";
 		};
+		13C1F6F026C4912A00256577 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 13BDE63B26923867004A6AB7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 13C1F6E126C4912700256577;
+			remoteInfo = "Agronom WidgetExtension";
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		13C1F6F626C4912A00256577 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				13C1F6F226C4912A00256577 /* Agronom WidgetExtension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		133B270326BB12E300052657 /* WeatherViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherViewModel.swift; sourceTree = "<group>"; };
@@ -106,6 +137,16 @@
 		13C1F69F26C459DD00256577 /* SprayersListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SprayersListPresenter.swift; sourceTree = "<group>"; };
 		13C1F6A126C45D9F00256577 /* SprayersListInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SprayersListInteractor.swift; sourceTree = "<group>"; };
 		13C1F6DC26C4677700256577 /* AgronomAPI */ = {isa = PBXFileReference; lastKnownFileType = folder; path = AgronomAPI; sourceTree = "<group>"; };
+		13C1F6DD26C48F1E00256577 /* Final Project.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Final Project.entitlements"; sourceTree = "<group>"; };
+		13C1F6E226C4912700256577 /* Agronom WidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Agronom WidgetExtension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		13C1F6E326C4912700256577 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		13C1F6E526C4912700256577 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		13C1F6E826C4912700256577 /* Agronom_Widget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Agronom_Widget.swift; sourceTree = "<group>"; };
+		13C1F6EA26C4912700256577 /* Agronom_Widget.intentdefinition */ = {isa = PBXFileReference; lastKnownFileType = file.intentdefinition; path = Agronom_Widget.intentdefinition; sourceTree = "<group>"; };
+		13C1F6EB26C4912A00256577 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		13C1F6ED26C4912A00256577 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		13C1F6F726C4931100256577 /* Agronom WidgetExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Agronom WidgetExtension.entitlements"; sourceTree = "<group>"; };
+		13C1F6F826C4F6EF00256577 /* WidgetWeather.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WidgetWeather.swift; sourceTree = "<group>"; };
 		13FFB9E026AC6BD800F35285 /* WeatherAPI */ = {isa = PBXFileReference; lastKnownFileType = folder; path = WeatherAPI; sourceTree = "<group>"; };
 		13FFB9E326AC872B00F35285 /* Networking */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Networking; sourceTree = "<group>"; };
 		13FFB9EC26AD833F00F35285 /* WeatherDailyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherDailyView.swift; sourceTree = "<group>"; };
@@ -129,6 +170,15 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		13C1F6DF26C4912700256577 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				13C1F6E626C4912700256577 /* SwiftUI.framework in Frameworks */,
+				13C1F6E426C4912700256577 /* WidgetKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -204,9 +254,11 @@
 		13BDE63A26923867004A6AB7 = {
 			isa = PBXGroup;
 			children = (
+				13C1F6F726C4931100256577 /* Agronom WidgetExtension.entitlements */,
 				13FFB9DF26AC6B8100F35285 /* Modules */,
 				13BDE64526923867004A6AB7 /* Final Project */,
 				13BDE6572692386C004A6AB7 /* Final ProjectTests */,
+				13C1F6E726C4912700256577 /* Agronom Widget */,
 				13BDE64426923867004A6AB7 /* Products */,
 				13FFB9F326AD935400F35285 /* Frameworks */,
 			);
@@ -217,6 +269,7 @@
 			children = (
 				13BDE64326923867004A6AB7 /* Final Project.app */,
 				13BDE6542692386C004A6AB7 /* Final ProjectTests.xctest */,
+				13C1F6E226C4912700256577 /* Agronom WidgetExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -224,6 +277,7 @@
 		13BDE64526923867004A6AB7 /* Final Project */ = {
 			isa = PBXGroup;
 			children = (
+				13C1F6DD26C48F1E00256577 /* Final Project.entitlements */,
 				13B1981826BDD072008C8094 /* CommonUI */,
 				13BDE67126930474004A6AB7 /* Services */,
 				137B12FF26C05DAC0033622C /* TabBar */,
@@ -271,6 +325,7 @@
 		13BDE67426930B04004A6AB7 /* Weather */ = {
 			isa = PBXGroup;
 			children = (
+				13C1F6FB26C502B400256577 /* Models */,
 				13FFB9FA26AD956500F35285 /* UI */,
 				137B12F426BEA1DC0033622C /* Presenter */,
 				137B12F126BE91D60033622C /* Interactor */,
@@ -343,6 +398,25 @@
 			path = Interactor;
 			sourceTree = "<group>";
 		};
+		13C1F6E726C4912700256577 /* Agronom Widget */ = {
+			isa = PBXGroup;
+			children = (
+				13C1F6E826C4912700256577 /* Agronom_Widget.swift */,
+				13C1F6EA26C4912700256577 /* Agronom_Widget.intentdefinition */,
+				13C1F6EB26C4912A00256577 /* Assets.xcassets */,
+				13C1F6ED26C4912A00256577 /* Info.plist */,
+			);
+			path = "Agronom Widget";
+			sourceTree = "<group>";
+		};
+		13C1F6FB26C502B400256577 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				13C1F6F826C4F6EF00256577 /* WidgetWeather.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		13FFB9DF26AC6B8100F35285 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
@@ -356,6 +430,8 @@
 		13FFB9F326AD935400F35285 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				13C1F6E326C4912700256577 /* WidgetKit.framework */,
+				13C1F6E526C4912700256577 /* SwiftUI.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -382,10 +458,12 @@
 				13BDE63F26923867004A6AB7 /* Sources */,
 				13BDE64026923867004A6AB7 /* Frameworks */,
 				13BDE64126923867004A6AB7 /* Resources */,
+				13C1F6F626C4912A00256577 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				13C1F6F126C4912A00256577 /* PBXTargetDependency */,
 			);
 			name = "Final Project";
 			packageProductDependencies = (
@@ -416,6 +494,23 @@
 			productReference = 13BDE6542692386C004A6AB7 /* Final ProjectTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		13C1F6E126C4912700256577 /* Agronom WidgetExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 13C1F6F326C4912A00256577 /* Build configuration list for PBXNativeTarget "Agronom WidgetExtension" */;
+			buildPhases = (
+				13C1F6DE26C4912700256577 /* Sources */,
+				13C1F6DF26C4912700256577 /* Frameworks */,
+				13C1F6E026C4912700256577 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Agronom WidgetExtension";
+			productName = "Agronom WidgetExtension";
+			productReference = 13C1F6E226C4912700256577 /* Agronom WidgetExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -431,6 +526,9 @@
 					13BDE6532692386C004A6AB7 = {
 						CreatedOnToolsVersion = 12.5.1;
 						TestTargetID = 13BDE64226923867004A6AB7;
+					};
+					13C1F6E126C4912700256577 = {
+						CreatedOnToolsVersion = 12.5.1;
 					};
 				};
 			};
@@ -453,6 +551,7 @@
 			targets = (
 				13BDE64226923867004A6AB7 /* Final Project */,
 				13BDE6532692386C004A6AB7 /* Final ProjectTests */,
+				13C1F6E126C4912700256577 /* Agronom WidgetExtension */,
 			);
 		};
 /* End PBXProject section */
@@ -472,6 +571,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		13C1F6E026C4912700256577 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				13C1F6EC26C4912A00256577 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -508,8 +615,10 @@
 				137B130126C05DCC0033622C /* TabBarScreenView.swift in Sources */,
 				13C1F69026C4505700256577 /* SprayersListScreenView.swift in Sources */,
 				13BDE64726923867004A6AB7 /* Final_ProjectApp.swift in Sources */,
+				13C1F6F926C4F6EF00256577 /* WidgetWeather.swift in Sources */,
 				137B130D26C060B50033622C /* TabBarViewModel.swift in Sources */,
 				137B130626C05ED70033622C /* ITabBarScreenView.swift in Sources */,
+				13C1F6EF26C4912A00256577 /* Agronom_Widget.intentdefinition in Sources */,
 				137B130B26C05F810033622C /* TabBarScreenInteractor.swift in Sources */,
 				13B1981726BDCD1C008C8094 /* ContainerView.swift in Sources */,
 				13C1F68726C3263E00256577 /* Date+Format.swift in Sources */,
@@ -529,6 +638,17 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		13C1F6DE26C4912700256577 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				13C1F6FA26C4F7B400256577 /* WidgetWeather.swift in Sources */,
+				13C1F6EE26C4912A00256577 /* Agronom_Widget.intentdefinition in Sources */,
+				13C1F6FC26C5068A00256577 /* Date+Format.swift in Sources */,
+				13C1F6E926C4912700256577 /* Agronom_Widget.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -536,6 +656,11 @@
 			isa = PBXTargetDependency;
 			target = 13BDE64226923867004A6AB7 /* Final Project */;
 			targetProxy = 13BDE6552692386C004A6AB7 /* PBXContainerItemProxy */;
+		};
+		13C1F6F126C4912A00256577 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 13C1F6E126C4912700256577 /* Agronom WidgetExtension */;
+			targetProxy = 13C1F6F026C4912A00256577 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -659,8 +784,10 @@
 		13BDE6692692386C004A6AB7 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Final Project/Final Project.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"Final Project/Preview Content\"";
 				DEVELOPMENT_TEAM = GF3U88C7F2;
@@ -671,7 +798,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.alexeybolv.Final-Project";
+				PRODUCT_BUNDLE_IDENTIFIER = com.alexeybolv.agronom;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -681,8 +808,10 @@
 		13BDE66A2692386C004A6AB7 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Final Project/Final Project.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"Final Project/Preview Content\"";
 				DEVELOPMENT_TEAM = GF3U88C7F2;
@@ -693,7 +822,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.alexeybolv.Final-Project";
+				PRODUCT_BUNDLE_IDENTIFIER = com.alexeybolv.agronom;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -744,6 +873,50 @@
 			};
 			name = Release;
 		};
+		13C1F6F426C4912A00256577 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = "Agronom WidgetExtension.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = GF3U88C7F2;
+				INFOPLIST_FILE = "Agronom Widget/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.alexeybolv.agronom.Agronom-Widget";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		13C1F6F526C4912A00256577 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = "Agronom WidgetExtension.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = GF3U88C7F2;
+				INFOPLIST_FILE = "Agronom Widget/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.alexeybolv.agronom.Agronom-Widget";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -770,6 +943,15 @@
 			buildConfigurations = (
 				13BDE66C2692386C004A6AB7 /* Debug */,
 				13BDE66D2692386C004A6AB7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		13C1F6F326C4912A00256577 /* Build configuration list for PBXNativeTarget "Agronom WidgetExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				13C1F6F426C4912A00256577 /* Debug */,
+				13C1F6F526C4912A00256577 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
