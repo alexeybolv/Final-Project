@@ -23,7 +23,7 @@ struct CalculatorScreenView: View {
             HStack {
                 Image(systemName: "minus.rectangle.portrait")
                 VStack {
-                    Text("\(Int(consumption)) л/га")
+                    Text("Расход: \(Int(consumption)) л/га")
                     Slider(value: $consumption, in: 0...1000)
                         .onChange(of: consumption) { _ in
                             model.sortNozzles(consumption: consumption, speed: speed, width: width)
@@ -35,7 +35,7 @@ struct CalculatorScreenView: View {
             HStack {
                 Image(systemName: "minus.rectangle.portrait")
                 VStack {
-                    Text("\(Int(speed)) км/ч")
+                    Text("Скорость: \(Int(speed)) км/ч")
                     Slider(value: $speed, in: 5...25)
                         .onChange(of: speed) { _ in
                             model.sortNozzles(consumption: consumption, speed: speed, width: width)
@@ -47,7 +47,7 @@ struct CalculatorScreenView: View {
             HStack {
                 Image(systemName: "minus.rectangle.portrait")
                 VStack {
-                    Text("\(Int(width)) м")
+                    Text("Ширина захвата: \(Int(width)) м")
                     Slider(value: $width, in: 2...24)
                         .onChange(of: width) { _ in
                             model.sortNozzles(consumption: consumption, speed: speed, width: width)
