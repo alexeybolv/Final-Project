@@ -15,7 +15,7 @@ class SprayersListConfigurator: IConfigurator {
         var view = SprayersListScreenView()
         let presenter = SprayersListPresenter()
         let interactor = SprayersListInteractor()
-//
+
         interactor.output = presenter
         presenter.output = view
         view.output = interactor

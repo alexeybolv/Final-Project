@@ -16,7 +16,9 @@ struct SprayersListScreenView: View {
     var body: some View {
         VStack {
             List(model.data, id: \.id) { sprayer in
-                Text(sprayer.name)
+                NavigationLink(destination: (ModuleConfig.shared.config(screen: CalculatorScreenView.self) as? CalculatorScreenConfigurator)?.createScreen(nil)) {
+                    Text(sprayer.name)
+                }
             }
         }
         .navigationTitle("Nozzles calculator")

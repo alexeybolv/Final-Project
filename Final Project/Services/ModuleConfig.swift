@@ -28,6 +28,9 @@ class ModuleConfig {
         if screen == SprayersListScreenView.self {
             return SprayersListConfigurator.shared
         }
+        if screen == CalculatorScreenView.self {
+            return CalculatorScreenConfigurator.shared
+        }
         return TabBarScreenConfigurator.shared
     }
 }

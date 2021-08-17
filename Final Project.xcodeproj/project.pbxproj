@@ -20,6 +20,13 @@
 		137B130B26C05F810033622C /* TabBarScreenInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 137B130A26C05F810033622C /* TabBarScreenInteractor.swift */; };
 		137B130D26C060B50033622C /* TabBarViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 137B130C26C060B50033622C /* TabBarViewModel.swift */; };
 		13921F2F26CC2112006D07D5 /* CalculatorScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13921F2E26CC2112006D07D5 /* CalculatorScreenView.swift */; };
+		13921F3126CC2366006D07D5 /* ICalculatorScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13921F3026CC2366006D07D5 /* ICalculatorScreenView.swift */; };
+		13921F3526CC2396006D07D5 /* CalculatorScreenViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13921F3426CC2396006D07D5 /* CalculatorScreenViewModel.swift */; };
+		13921F3726CC23AE006D07D5 /* CalculatorScreenConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13921F3626CC23AE006D07D5 /* CalculatorScreenConfigurator.swift */; };
+		13921F3926CC2485006D07D5 /* ICalculatorScreenInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13921F3826CC2485006D07D5 /* ICalculatorScreenInteractor.swift */; };
+		13921F3B26CC2498006D07D5 /* CalculatorScreenInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13921F3A26CC2498006D07D5 /* CalculatorScreenInteractor.swift */; };
+		13921F3D26CC251A006D07D5 /* ICalculatorScreenPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13921F3C26CC251A006D07D5 /* ICalculatorScreenPresenter.swift */; };
+		13921F3F26CC2529006D07D5 /* CalculatorScreenPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13921F3E26CC2529006D07D5 /* CalculatorScreenPresenter.swift */; };
 		13A406C0269AFCB20016BDF7 /* Moya in Frameworks */ = {isa = PBXBuildFile; productRef = 13A406BF269AFCB20016BDF7 /* Moya */; };
 		13B1981026BDCB4C008C8094 /* Navigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13B1980F26BDCB4C008C8094 /* Navigator.swift */; };
 		13B1981226BDCC07008C8094 /* ModuleConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13B1981126BDCC07008C8094 /* ModuleConfig.swift */; };
@@ -109,6 +116,13 @@
 		137B130A26C05F810033622C /* TabBarScreenInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarScreenInteractor.swift; sourceTree = "<group>"; };
 		137B130C26C060B50033622C /* TabBarViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewModel.swift; sourceTree = "<group>"; };
 		13921F2E26CC2112006D07D5 /* CalculatorScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorScreenView.swift; sourceTree = "<group>"; };
+		13921F3026CC2366006D07D5 /* ICalculatorScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ICalculatorScreenView.swift; sourceTree = "<group>"; };
+		13921F3426CC2396006D07D5 /* CalculatorScreenViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorScreenViewModel.swift; sourceTree = "<group>"; };
+		13921F3626CC23AE006D07D5 /* CalculatorScreenConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorScreenConfigurator.swift; sourceTree = "<group>"; };
+		13921F3826CC2485006D07D5 /* ICalculatorScreenInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ICalculatorScreenInteractor.swift; sourceTree = "<group>"; };
+		13921F3A26CC2498006D07D5 /* CalculatorScreenInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorScreenInteractor.swift; sourceTree = "<group>"; };
+		13921F3C26CC251A006D07D5 /* ICalculatorScreenPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ICalculatorScreenPresenter.swift; sourceTree = "<group>"; };
+		13921F3E26CC2529006D07D5 /* CalculatorScreenPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorScreenPresenter.swift; sourceTree = "<group>"; };
 		13B1980F26BDCB4C008C8094 /* Navigator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Navigator.swift; sourceTree = "<group>"; };
 		13B1981126BDCC07008C8094 /* ModuleConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModuleConfig.swift; sourceTree = "<group>"; };
 		13B1981326BDCC96008C8094 /* WeatherConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherConfigurator.swift; sourceTree = "<group>"; };
@@ -247,6 +261,10 @@
 			isa = PBXGroup;
 			children = (
 				13921F2D26CC20F6006D07D5 /* UI */,
+				13921F3226CC236C006D07D5 /* Presenter */,
+				13921F3326CC2374006D07D5 /* Interactor */,
+				13921F3426CC2396006D07D5 /* CalculatorScreenViewModel.swift */,
+				13921F3626CC23AE006D07D5 /* CalculatorScreenConfigurator.swift */,
 			);
 			path = Calculator;
 			sourceTree = "<group>";
@@ -254,9 +272,28 @@
 		13921F2D26CC20F6006D07D5 /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				13921F3026CC2366006D07D5 /* ICalculatorScreenView.swift */,
 				13921F2E26CC2112006D07D5 /* CalculatorScreenView.swift */,
 			);
 			path = UI;
+			sourceTree = "<group>";
+		};
+		13921F3226CC236C006D07D5 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				13921F3C26CC251A006D07D5 /* ICalculatorScreenPresenter.swift */,
+				13921F3E26CC2529006D07D5 /* CalculatorScreenPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		13921F3326CC2374006D07D5 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				13921F3826CC2485006D07D5 /* ICalculatorScreenInteractor.swift */,
+				13921F3A26CC2498006D07D5 /* CalculatorScreenInteractor.swift */,
+			);
+			path = Interactor;
 			sourceTree = "<group>";
 		};
 		13B1981826BDD072008C8094 /* CommonUI */ = {
@@ -612,7 +649,9 @@
 				13C1F68426C3228C00256577 /* WeatherCurrentView.swift in Sources */,
 				13C1F6A026C459DD00256577 /* SprayersListPresenter.swift in Sources */,
 				13B1981C26BDD0C8008C8094 /* ActivityIndicator.swift in Sources */,
+				13921F3126CC2366006D07D5 /* ICalculatorScreenView.swift in Sources */,
 				13C1F69226C4509C00256577 /* SprayersListConfigurator.swift in Sources */,
+				13921F3D26CC251A006D07D5 /* ICalculatorScreenPresenter.swift in Sources */,
 				13B1981026BDCB4C008C8094 /* Navigator.swift in Sources */,
 				137B12B926BDD5990033622C /* ContainerModel.swift in Sources */,
 				13C1F68B26C4455D00256577 /* GlobalStrings.swift in Sources */,
@@ -622,6 +661,7 @@
 				13FFB9F926AD955100F35285 /* WeatherPresenter.swift in Sources */,
 				13C1F69826C4519900256577 /* ISprayersListPresenter.swift in Sources */,
 				137B12F826BEA2F10033622C /* IWeatherScreenView.swift in Sources */,
+				13921F3526CC2396006D07D5 /* CalculatorScreenViewModel.swift in Sources */,
 				137B12F326BE9BAB0033622C /* IWeatherInteractor.swift in Sources */,
 				13C1F69C26C4545D00256577 /* IPresenter.swift in Sources */,
 				137B12F626BEA1F00033622C /* IWeatherPresenter.swift in Sources */,
@@ -630,8 +670,10 @@
 				13BDE678269317D0004A6AB7 /* WeatherScreenView.swift in Sources */,
 				13C1F69A26C451AA00256577 /* ISprayersListInteractor.swift in Sources */,
 				13921F2F26CC2112006D07D5 /* CalculatorScreenView.swift in Sources */,
+				13921F3B26CC2498006D07D5 /* CalculatorScreenInteractor.swift in Sources */,
 				13FFB9ED26AD833F00F35285 /* WeatherDailyView.swift in Sources */,
 				137B130926C05F520033622C /* ITabBarScreenInteractor.swift in Sources */,
+				13921F3926CC2485006D07D5 /* ICalculatorScreenInteractor.swift in Sources */,
 				137B130126C05DCC0033622C /* TabBarScreenView.swift in Sources */,
 				13C1F69026C4505700256577 /* SprayersListScreenView.swift in Sources */,
 				13BDE64726923867004A6AB7 /* Final_ProjectApp.swift in Sources */,
@@ -639,7 +681,9 @@
 				137B130D26C060B50033622C /* TabBarViewModel.swift in Sources */,
 				137B130626C05ED70033622C /* ITabBarScreenView.swift in Sources */,
 				13C1F6EF26C4912A00256577 /* Agronom_Widget.intentdefinition in Sources */,
+				13921F3F26CC2529006D07D5 /* CalculatorScreenPresenter.swift in Sources */,
 				137B130B26C05F810033622C /* TabBarScreenInteractor.swift in Sources */,
+				13921F3726CC23AE006D07D5 /* CalculatorScreenConfigurator.swift in Sources */,
 				13B1981726BDCD1C008C8094 /* ContainerView.swift in Sources */,
 				13C1F68726C3263E00256577 /* Date+Format.swift in Sources */,
 				13C1F68926C3CF9000256577 /* WeatherHourlyView.swift in Sources */,

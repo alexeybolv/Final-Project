@@ -8,8 +8,24 @@
 import SwiftUI
 
 struct CalculatorScreenView: View {
+
+    var output: ICalculatorScreenInteractor?
+    var container: IContainer?
+    @ObservedObject var model: CalculatorScreenViewModel =  CalculatorScreenViewModel()
+
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        Text("Hello")
+    }
+}
+
+extension CalculatorScreenView: ICalculatorScreenView {
+
+    var viewModel: IModel? {
+        return model
+    }
+
+    func updateModel(data: Any?) {
+        self.model.update(data: data)
     }
 }
 
