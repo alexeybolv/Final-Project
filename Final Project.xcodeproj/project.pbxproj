@@ -7,11 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		133B270426BB12E300052657 /* WeatherListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 133B270326BB12E300052657 /* WeatherListViewModel.swift */; };
+		133B270426BB12E300052657 /* WeatherViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 133B270326BB12E300052657 /* WeatherViewModel.swift */; };
 		137B12B926BDD5990033622C /* ContainerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 137B12B826BDD5990033622C /* ContainerModel.swift */; };
-		137B12F326BE9BAB0033622C /* IWeatherListInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 137B12F226BE9BAB0033622C /* IWeatherListInteractor.swift */; };
-		137B12F626BEA1F00033622C /* IWeatherListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 137B12F526BEA1F00033622C /* IWeatherListPresenter.swift */; };
-		137B12F826BEA2F10033622C /* IWeatherListScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 137B12F726BEA2F10033622C /* IWeatherListScreenView.swift */; };
+		137B12F326BE9BAB0033622C /* IWeatherInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 137B12F226BE9BAB0033622C /* IWeatherInteractor.swift */; };
+		137B12F626BEA1F00033622C /* IWeatherPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 137B12F526BEA1F00033622C /* IWeatherPresenter.swift */; };
+		137B12F826BEA2F10033622C /* IWeatherScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 137B12F726BEA2F10033622C /* IWeatherScreenView.swift */; };
 		137B12FE26C05C870033622C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 137B12FD26C05C870033622C /* LaunchScreen.storyboard */; };
 		137B130126C05DCC0033622C /* TabBarScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 137B130026C05DCC0033622C /* TabBarScreenView.swift */; };
 		137B130426C05E630033622C /* TabBarScreenConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 137B130326C05E630033622C /* TabBarScreenConfigurator.swift */; };
@@ -19,10 +19,18 @@
 		137B130926C05F520033622C /* ITabBarScreenInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 137B130826C05F520033622C /* ITabBarScreenInteractor.swift */; };
 		137B130B26C05F810033622C /* TabBarScreenInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 137B130A26C05F810033622C /* TabBarScreenInteractor.swift */; };
 		137B130D26C060B50033622C /* TabBarViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 137B130C26C060B50033622C /* TabBarViewModel.swift */; };
+		13921F2F26CC2112006D07D5 /* CalculatorScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13921F2E26CC2112006D07D5 /* CalculatorScreenView.swift */; };
+		13921F3126CC2366006D07D5 /* ICalculatorScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13921F3026CC2366006D07D5 /* ICalculatorScreenView.swift */; };
+		13921F3526CC2396006D07D5 /* CalculatorScreenViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13921F3426CC2396006D07D5 /* CalculatorScreenViewModel.swift */; };
+		13921F3726CC23AE006D07D5 /* CalculatorScreenConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13921F3626CC23AE006D07D5 /* CalculatorScreenConfigurator.swift */; };
+		13921F3926CC2485006D07D5 /* ICalculatorScreenInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13921F3826CC2485006D07D5 /* ICalculatorScreenInteractor.swift */; };
+		13921F3B26CC2498006D07D5 /* CalculatorScreenInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13921F3A26CC2498006D07D5 /* CalculatorScreenInteractor.swift */; };
+		13921F3D26CC251A006D07D5 /* ICalculatorScreenPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13921F3C26CC251A006D07D5 /* ICalculatorScreenPresenter.swift */; };
+		13921F3F26CC2529006D07D5 /* CalculatorScreenPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13921F3E26CC2529006D07D5 /* CalculatorScreenPresenter.swift */; };
 		13A406C0269AFCB20016BDF7 /* Moya in Frameworks */ = {isa = PBXBuildFile; productRef = 13A406BF269AFCB20016BDF7 /* Moya */; };
 		13B1981026BDCB4C008C8094 /* Navigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13B1980F26BDCB4C008C8094 /* Navigator.swift */; };
 		13B1981226BDCC07008C8094 /* ModuleConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13B1981126BDCC07008C8094 /* ModuleConfig.swift */; };
-		13B1981426BDCC96008C8094 /* WeatherListConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13B1981326BDCC96008C8094 /* WeatherListConfigurator.swift */; };
+		13B1981426BDCC96008C8094 /* WeatherConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13B1981326BDCC96008C8094 /* WeatherConfigurator.swift */; };
 		13B1981726BDCD1C008C8094 /* ContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13B1981626BDCD1C008C8094 /* ContainerView.swift */; };
 		13B1981A26BDD09C008C8094 /* LoaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13B1981926BDD09C008C8094 /* LoaderView.swift */; };
 		13B1981C26BDD0C8008C8094 /* ActivityIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13B1981B26BDD0C8008C8094 /* ActivityIndicator.swift */; };
@@ -30,14 +38,37 @@
 		13BDE64B2692386B004A6AB7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13BDE64A2692386B004A6AB7 /* Assets.xcassets */; };
 		13BDE64E2692386B004A6AB7 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13BDE64D2692386B004A6AB7 /* Preview Assets.xcassets */; };
 		13BDE6592692386C004A6AB7 /* Final_ProjectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13BDE6582692386C004A6AB7 /* Final_ProjectTests.swift */; };
-		13BDE678269317D0004A6AB7 /* WeatherListScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13BDE677269317D0004A6AB7 /* WeatherListScreenView.swift */; };
+		13BDE678269317D0004A6AB7 /* WeatherScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13BDE677269317D0004A6AB7 /* WeatherScreenView.swift */; };
 		13BDE67B269318FE004A6AB7 /* ProfileScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13BDE67A269318FE004A6AB7 /* ProfileScreenView.swift */; };
-		13FFB9ED26AD833F00F35285 /* WeatherListItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13FFB9EC26AD833F00F35285 /* WeatherListItem.swift */; };
+		13C1F68426C3228C00256577 /* WeatherCurrentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13C1F68326C3228C00256577 /* WeatherCurrentView.swift */; };
+		13C1F68726C3263E00256577 /* Date+Format.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13C1F68626C3263E00256577 /* Date+Format.swift */; };
+		13C1F68926C3CF9000256577 /* WeatherHourlyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13C1F68826C3CF9000256577 /* WeatherHourlyView.swift */; };
+		13C1F68B26C4455D00256577 /* GlobalStrings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13C1F68A26C4455D00256577 /* GlobalStrings.swift */; };
+		13C1F69026C4505700256577 /* SprayersListScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13C1F68F26C4505700256577 /* SprayersListScreenView.swift */; };
+		13C1F69226C4509C00256577 /* SprayersListConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13C1F69126C4509C00256577 /* SprayersListConfigurator.swift */; };
+		13C1F69426C450EB00256577 /* ISprayersListScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13C1F69326C450EB00256577 /* ISprayersListScreenView.swift */; };
+		13C1F69826C4519900256577 /* ISprayersListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13C1F69726C4519900256577 /* ISprayersListPresenter.swift */; };
+		13C1F69A26C451AA00256577 /* ISprayersListInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13C1F69926C451AA00256577 /* ISprayersListInteractor.swift */; };
+		13C1F69C26C4545D00256577 /* IPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13C1F69B26C4545D00256577 /* IPresenter.swift */; };
+		13C1F69E26C4557100256577 /* SprayerListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13C1F69D26C4557100256577 /* SprayerListViewModel.swift */; };
+		13C1F6A026C459DD00256577 /* SprayersListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13C1F69F26C459DD00256577 /* SprayersListPresenter.swift */; };
+		13C1F6A226C45D9F00256577 /* SprayersListInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13C1F6A126C45D9F00256577 /* SprayersListInteractor.swift */; };
+		13C1F6E426C4912700256577 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 13C1F6E326C4912700256577 /* WidgetKit.framework */; };
+		13C1F6E626C4912700256577 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 13C1F6E526C4912700256577 /* SwiftUI.framework */; };
+		13C1F6E926C4912700256577 /* Agronom_Widget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13C1F6E826C4912700256577 /* Agronom_Widget.swift */; };
+		13C1F6EC26C4912A00256577 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13C1F6EB26C4912A00256577 /* Assets.xcassets */; };
+		13C1F6EE26C4912A00256577 /* Agronom_Widget.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 13C1F6EA26C4912700256577 /* Agronom_Widget.intentdefinition */; };
+		13C1F6EF26C4912A00256577 /* Agronom_Widget.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 13C1F6EA26C4912700256577 /* Agronom_Widget.intentdefinition */; };
+		13C1F6F226C4912A00256577 /* Agronom WidgetExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 13C1F6E226C4912700256577 /* Agronom WidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		13C1F6F926C4F6EF00256577 /* WidgetWeather.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13C1F6F826C4F6EF00256577 /* WidgetWeather.swift */; };
+		13C1F6FA26C4F7B400256577 /* WidgetWeather.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13C1F6F826C4F6EF00256577 /* WidgetWeather.swift */; };
+		13C1F6FC26C5068A00256577 /* Date+Format.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13C1F68626C3263E00256577 /* Date+Format.swift */; };
+		13FFB9ED26AD833F00F35285 /* WeatherDailyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13FFB9EC26AD833F00F35285 /* WeatherDailyView.swift */; };
 		13FFB9F026AD8C4600F35285 /* SDWebImageSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = 13FFB9EF26AD8C4600F35285 /* SDWebImageSwiftUI */; };
-		13FFB9F226AD927800F35285 /* WeatherListInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13FFB9F126AD927800F35285 /* WeatherListInteractor.swift */; };
+		13FFB9F226AD927800F35285 /* WeatherInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13FFB9F126AD927800F35285 /* WeatherInteractor.swift */; };
 		13FFB9F526AD935400F35285 /* Networking in Frameworks */ = {isa = PBXBuildFile; productRef = 13FFB9F426AD935400F35285 /* Networking */; };
 		13FFB9F726AD935400F35285 /* WeatherAPI in Frameworks */ = {isa = PBXBuildFile; productRef = 13FFB9F626AD935400F35285 /* WeatherAPI */; };
-		13FFB9F926AD955100F35285 /* WeatherListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13FFB9F826AD955100F35285 /* WeatherListPresenter.swift */; };
+		13FFB9F926AD955100F35285 /* WeatherPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13FFB9F826AD955100F35285 /* WeatherPresenter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,14 +79,35 @@
 			remoteGlobalIDString = 13BDE64226923867004A6AB7;
 			remoteInfo = "Final Project";
 		};
+		13C1F6F026C4912A00256577 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 13BDE63B26923867004A6AB7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 13C1F6E126C4912700256577;
+			remoteInfo = "Agronom WidgetExtension";
+		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		13C1F6F626C4912A00256577 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				13C1F6F226C4912A00256577 /* Agronom WidgetExtension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
-		133B270326BB12E300052657 /* WeatherListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherListViewModel.swift; sourceTree = "<group>"; };
+		133B270326BB12E300052657 /* WeatherViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherViewModel.swift; sourceTree = "<group>"; };
 		137B12B826BDD5990033622C /* ContainerModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContainerModel.swift; sourceTree = "<group>"; };
-		137B12F226BE9BAB0033622C /* IWeatherListInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IWeatherListInteractor.swift; sourceTree = "<group>"; };
-		137B12F526BEA1F00033622C /* IWeatherListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IWeatherListPresenter.swift; sourceTree = "<group>"; };
-		137B12F726BEA2F10033622C /* IWeatherListScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IWeatherListScreenView.swift; sourceTree = "<group>"; };
+		137B12F226BE9BAB0033622C /* IWeatherInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IWeatherInteractor.swift; sourceTree = "<group>"; };
+		137B12F526BEA1F00033622C /* IWeatherPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IWeatherPresenter.swift; sourceTree = "<group>"; };
+		137B12F726BEA2F10033622C /* IWeatherScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IWeatherScreenView.swift; sourceTree = "<group>"; };
 		137B12FD26C05C870033622C /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		137B130026C05DCC0033622C /* TabBarScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarScreenView.swift; sourceTree = "<group>"; };
 		137B130326C05E630033622C /* TabBarScreenConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarScreenConfigurator.swift; sourceTree = "<group>"; };
@@ -63,9 +115,17 @@
 		137B130826C05F520033622C /* ITabBarScreenInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ITabBarScreenInteractor.swift; sourceTree = "<group>"; };
 		137B130A26C05F810033622C /* TabBarScreenInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarScreenInteractor.swift; sourceTree = "<group>"; };
 		137B130C26C060B50033622C /* TabBarViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewModel.swift; sourceTree = "<group>"; };
+		13921F2E26CC2112006D07D5 /* CalculatorScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorScreenView.swift; sourceTree = "<group>"; };
+		13921F3026CC2366006D07D5 /* ICalculatorScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ICalculatorScreenView.swift; sourceTree = "<group>"; };
+		13921F3426CC2396006D07D5 /* CalculatorScreenViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorScreenViewModel.swift; sourceTree = "<group>"; };
+		13921F3626CC23AE006D07D5 /* CalculatorScreenConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorScreenConfigurator.swift; sourceTree = "<group>"; };
+		13921F3826CC2485006D07D5 /* ICalculatorScreenInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ICalculatorScreenInteractor.swift; sourceTree = "<group>"; };
+		13921F3A26CC2498006D07D5 /* CalculatorScreenInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorScreenInteractor.swift; sourceTree = "<group>"; };
+		13921F3C26CC251A006D07D5 /* ICalculatorScreenPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ICalculatorScreenPresenter.swift; sourceTree = "<group>"; };
+		13921F3E26CC2529006D07D5 /* CalculatorScreenPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorScreenPresenter.swift; sourceTree = "<group>"; };
 		13B1980F26BDCB4C008C8094 /* Navigator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Navigator.swift; sourceTree = "<group>"; };
 		13B1981126BDCC07008C8094 /* ModuleConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModuleConfig.swift; sourceTree = "<group>"; };
-		13B1981326BDCC96008C8094 /* WeatherListConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherListConfigurator.swift; sourceTree = "<group>"; };
+		13B1981326BDCC96008C8094 /* WeatherConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherConfigurator.swift; sourceTree = "<group>"; };
 		13B1981626BDCD1C008C8094 /* ContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContainerView.swift; sourceTree = "<group>"; };
 		13B1981926BDD09C008C8094 /* LoaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoaderView.swift; sourceTree = "<group>"; };
 		13B1981B26BDD0C8008C8094 /* ActivityIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityIndicator.swift; sourceTree = "<group>"; };
@@ -77,13 +137,37 @@
 		13BDE6542692386C004A6AB7 /* Final ProjectTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Final ProjectTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		13BDE6582692386C004A6AB7 /* Final_ProjectTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Final_ProjectTests.swift; sourceTree = "<group>"; };
 		13BDE65A2692386C004A6AB7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		13BDE677269317D0004A6AB7 /* WeatherListScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherListScreenView.swift; sourceTree = "<group>"; };
+		13BDE677269317D0004A6AB7 /* WeatherScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherScreenView.swift; sourceTree = "<group>"; };
 		13BDE67A269318FE004A6AB7 /* ProfileScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileScreenView.swift; sourceTree = "<group>"; };
+		13C1F68326C3228C00256577 /* WeatherCurrentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherCurrentView.swift; sourceTree = "<group>"; };
+		13C1F68626C3263E00256577 /* Date+Format.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Format.swift"; sourceTree = "<group>"; };
+		13C1F68826C3CF9000256577 /* WeatherHourlyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherHourlyView.swift; sourceTree = "<group>"; };
+		13C1F68A26C4455D00256577 /* GlobalStrings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalStrings.swift; sourceTree = "<group>"; };
+		13C1F68F26C4505700256577 /* SprayersListScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SprayersListScreenView.swift; sourceTree = "<group>"; };
+		13C1F69126C4509C00256577 /* SprayersListConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SprayersListConfigurator.swift; sourceTree = "<group>"; };
+		13C1F69326C450EB00256577 /* ISprayersListScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ISprayersListScreenView.swift; sourceTree = "<group>"; };
+		13C1F69726C4519900256577 /* ISprayersListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ISprayersListPresenter.swift; sourceTree = "<group>"; };
+		13C1F69926C451AA00256577 /* ISprayersListInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ISprayersListInteractor.swift; sourceTree = "<group>"; };
+		13C1F69B26C4545D00256577 /* IPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IPresenter.swift; sourceTree = "<group>"; };
+		13C1F69D26C4557100256577 /* SprayerListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SprayerListViewModel.swift; sourceTree = "<group>"; };
+		13C1F69F26C459DD00256577 /* SprayersListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SprayersListPresenter.swift; sourceTree = "<group>"; };
+		13C1F6A126C45D9F00256577 /* SprayersListInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SprayersListInteractor.swift; sourceTree = "<group>"; };
+		13C1F6DC26C4677700256577 /* AgronomAPI */ = {isa = PBXFileReference; lastKnownFileType = folder; path = AgronomAPI; sourceTree = "<group>"; };
+		13C1F6DD26C48F1E00256577 /* Final Project.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Final Project.entitlements"; sourceTree = "<group>"; };
+		13C1F6E226C4912700256577 /* Agronom WidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Agronom WidgetExtension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		13C1F6E326C4912700256577 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		13C1F6E526C4912700256577 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		13C1F6E826C4912700256577 /* Agronom_Widget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Agronom_Widget.swift; sourceTree = "<group>"; };
+		13C1F6EA26C4912700256577 /* Agronom_Widget.intentdefinition */ = {isa = PBXFileReference; lastKnownFileType = file.intentdefinition; path = Agronom_Widget.intentdefinition; sourceTree = "<group>"; };
+		13C1F6EB26C4912A00256577 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		13C1F6ED26C4912A00256577 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		13C1F6F726C4931100256577 /* Agronom WidgetExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Agronom WidgetExtension.entitlements"; sourceTree = "<group>"; };
+		13C1F6F826C4F6EF00256577 /* WidgetWeather.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WidgetWeather.swift; sourceTree = "<group>"; };
 		13FFB9E026AC6BD800F35285 /* WeatherAPI */ = {isa = PBXFileReference; lastKnownFileType = folder; path = WeatherAPI; sourceTree = "<group>"; };
 		13FFB9E326AC872B00F35285 /* Networking */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Networking; sourceTree = "<group>"; };
-		13FFB9EC26AD833F00F35285 /* WeatherListItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherListItem.swift; sourceTree = "<group>"; };
-		13FFB9F126AD927800F35285 /* WeatherListInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherListInteractor.swift; sourceTree = "<group>"; };
-		13FFB9F826AD955100F35285 /* WeatherListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherListPresenter.swift; sourceTree = "<group>"; };
+		13FFB9EC26AD833F00F35285 /* WeatherDailyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherDailyView.swift; sourceTree = "<group>"; };
+		13FFB9F126AD927800F35285 /* WeatherInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherInteractor.swift; sourceTree = "<group>"; };
+		13FFB9F826AD955100F35285 /* WeatherPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherPresenter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +189,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		13C1F6DF26C4912700256577 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				13C1F6E626C4912700256577 /* SwiftUI.framework in Frameworks */,
+				13C1F6E426C4912700256577 /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -120,8 +213,8 @@
 		137B12F126BE91D60033622C /* Interactor */ = {
 			isa = PBXGroup;
 			children = (
-				137B12F226BE9BAB0033622C /* IWeatherListInteractor.swift */,
-				13FFB9F126AD927800F35285 /* WeatherListInteractor.swift */,
+				137B12F226BE9BAB0033622C /* IWeatherInteractor.swift */,
+				13FFB9F126AD927800F35285 /* WeatherInteractor.swift */,
 			);
 			path = Interactor;
 			sourceTree = "<group>";
@@ -129,8 +222,8 @@
 		137B12F426BEA1DC0033622C /* Presenter */ = {
 			isa = PBXGroup;
 			children = (
-				137B12F526BEA1F00033622C /* IWeatherListPresenter.swift */,
-				13FFB9F826AD955100F35285 /* WeatherListPresenter.swift */,
+				137B12F526BEA1F00033622C /* IWeatherPresenter.swift */,
+				13FFB9F826AD955100F35285 /* WeatherPresenter.swift */,
 			);
 			path = Presenter;
 			sourceTree = "<group>";
@@ -164,6 +257,45 @@
 			path = Interactor;
 			sourceTree = "<group>";
 		};
+		13921F2C26CC20E8006D07D5 /* Calculator */ = {
+			isa = PBXGroup;
+			children = (
+				13921F2D26CC20F6006D07D5 /* UI */,
+				13921F3226CC236C006D07D5 /* Presenter */,
+				13921F3326CC2374006D07D5 /* Interactor */,
+				13921F3426CC2396006D07D5 /* CalculatorScreenViewModel.swift */,
+				13921F3626CC23AE006D07D5 /* CalculatorScreenConfigurator.swift */,
+			);
+			path = Calculator;
+			sourceTree = "<group>";
+		};
+		13921F2D26CC20F6006D07D5 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				13921F3026CC2366006D07D5 /* ICalculatorScreenView.swift */,
+				13921F2E26CC2112006D07D5 /* CalculatorScreenView.swift */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		13921F3226CC236C006D07D5 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				13921F3C26CC251A006D07D5 /* ICalculatorScreenPresenter.swift */,
+				13921F3E26CC2529006D07D5 /* CalculatorScreenPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		13921F3326CC2374006D07D5 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				13921F3826CC2485006D07D5 /* ICalculatorScreenInteractor.swift */,
+				13921F3A26CC2498006D07D5 /* CalculatorScreenInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
 		13B1981826BDD072008C8094 /* CommonUI */ = {
 			isa = PBXGroup;
 			children = (
@@ -177,9 +309,11 @@
 		13BDE63A26923867004A6AB7 = {
 			isa = PBXGroup;
 			children = (
+				13C1F6F726C4931100256577 /* Agronom WidgetExtension.entitlements */,
 				13FFB9DF26AC6B8100F35285 /* Modules */,
 				13BDE64526923867004A6AB7 /* Final Project */,
 				13BDE6572692386C004A6AB7 /* Final ProjectTests */,
+				13C1F6E726C4912700256577 /* Agronom Widget */,
 				13BDE64426923867004A6AB7 /* Products */,
 				13FFB9F326AD935400F35285 /* Frameworks */,
 			);
@@ -190,6 +324,7 @@
 			children = (
 				13BDE64326923867004A6AB7 /* Final Project.app */,
 				13BDE6542692386C004A6AB7 /* Final ProjectTests.xctest */,
+				13C1F6E226C4912700256577 /* Agronom WidgetExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -197,16 +332,19 @@
 		13BDE64526923867004A6AB7 /* Final Project */ = {
 			isa = PBXGroup;
 			children = (
+				13C1F6DD26C48F1E00256577 /* Final Project.entitlements */,
 				13B1981826BDD072008C8094 /* CommonUI */,
 				13BDE67126930474004A6AB7 /* Services */,
 				137B12FF26C05DAC0033622C /* TabBar */,
+				13BDE67426930B04004A6AB7 /* Weather */,
 				13BDE67C26931FFD004A6AB7 /* Calculators */,
-				13BDE67426930B04004A6AB7 /* WeatherList */,
 				13BDE6792693185F004A6AB7 /* Profile */,
 				13BDE64626923867004A6AB7 /* Final_ProjectApp.swift */,
+				13C1F68A26C4455D00256577 /* GlobalStrings.swift */,
 				137B12FD26C05C870033622C /* LaunchScreen.storyboard */,
 				13BDE64A2692386B004A6AB7 /* Assets.xcassets */,
 				13BDE64F2692386B004A6AB7 /* Info.plist */,
+				13C1F68526C3261A00256577 /* Extensions */,
 				13BDE64C2692386B004A6AB7 /* Preview Content */,
 			);
 			path = "Final Project";
@@ -234,20 +372,22 @@
 			children = (
 				13B1980F26BDCB4C008C8094 /* Navigator.swift */,
 				13B1981126BDCC07008C8094 /* ModuleConfig.swift */,
+				13C1F69B26C4545D00256577 /* IPresenter.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
 		};
-		13BDE67426930B04004A6AB7 /* WeatherList */ = {
+		13BDE67426930B04004A6AB7 /* Weather */ = {
 			isa = PBXGroup;
 			children = (
+				13C1F6FB26C502B400256577 /* Models */,
 				13FFB9FA26AD956500F35285 /* UI */,
 				137B12F426BEA1DC0033622C /* Presenter */,
 				137B12F126BE91D60033622C /* Interactor */,
-				133B270326BB12E300052657 /* WeatherListViewModel.swift */,
-				13B1981326BDCC96008C8094 /* WeatherListConfigurator.swift */,
+				133B270326BB12E300052657 /* WeatherViewModel.swift */,
+				13B1981326BDCC96008C8094 /* WeatherConfigurator.swift */,
 			);
-			path = WeatherList;
+			path = Weather;
 			sourceTree = "<group>";
 		};
 		13BDE6792693185F004A6AB7 /* Profile */ = {
@@ -261,14 +401,83 @@
 		13BDE67C26931FFD004A6AB7 /* Calculators */ = {
 			isa = PBXGroup;
 			children = (
+				13C1F68D26C44FF300256577 /* SprayersList */,
+				13921F2C26CC20E8006D07D5 /* Calculator */,
 			);
 			path = Calculators;
+			sourceTree = "<group>";
+		};
+		13C1F68526C3261A00256577 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				13C1F68626C3263E00256577 /* Date+Format.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		13C1F68D26C44FF300256577 /* SprayersList */ = {
+			isa = PBXGroup;
+			children = (
+				13C1F68E26C4501500256577 /* UI */,
+				13C1F69526C4514A00256577 /* Presenter */,
+				13C1F69626C4515400256577 /* Interactor */,
+				13C1F69D26C4557100256577 /* SprayerListViewModel.swift */,
+				13C1F69126C4509C00256577 /* SprayersListConfigurator.swift */,
+			);
+			path = SprayersList;
+			sourceTree = "<group>";
+		};
+		13C1F68E26C4501500256577 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				13C1F69326C450EB00256577 /* ISprayersListScreenView.swift */,
+				13C1F68F26C4505700256577 /* SprayersListScreenView.swift */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		13C1F69526C4514A00256577 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				13C1F69726C4519900256577 /* ISprayersListPresenter.swift */,
+				13C1F69F26C459DD00256577 /* SprayersListPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		13C1F69626C4515400256577 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				13C1F69926C451AA00256577 /* ISprayersListInteractor.swift */,
+				13C1F6A126C45D9F00256577 /* SprayersListInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		13C1F6E726C4912700256577 /* Agronom Widget */ = {
+			isa = PBXGroup;
+			children = (
+				13C1F6E826C4912700256577 /* Agronom_Widget.swift */,
+				13C1F6EA26C4912700256577 /* Agronom_Widget.intentdefinition */,
+				13C1F6EB26C4912A00256577 /* Assets.xcassets */,
+				13C1F6ED26C4912A00256577 /* Info.plist */,
+			);
+			path = "Agronom Widget";
+			sourceTree = "<group>";
+		};
+		13C1F6FB26C502B400256577 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				13C1F6F826C4F6EF00256577 /* WidgetWeather.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 		13FFB9DF26AC6B8100F35285 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
 				13FFB9E326AC872B00F35285 /* Networking */,
+				13C1F6DC26C4677700256577 /* AgronomAPI */,
 				13FFB9E026AC6BD800F35285 /* WeatherAPI */,
 			);
 			path = Modules;
@@ -277,6 +486,8 @@
 		13FFB9F326AD935400F35285 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				13C1F6E326C4912700256577 /* WidgetKit.framework */,
+				13C1F6E526C4912700256577 /* SwiftUI.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -284,9 +495,11 @@
 		13FFB9FA26AD956500F35285 /* UI */ = {
 			isa = PBXGroup;
 			children = (
-				137B12F726BEA2F10033622C /* IWeatherListScreenView.swift */,
-				13BDE677269317D0004A6AB7 /* WeatherListScreenView.swift */,
-				13FFB9EC26AD833F00F35285 /* WeatherListItem.swift */,
+				137B12F726BEA2F10033622C /* IWeatherScreenView.swift */,
+				13BDE677269317D0004A6AB7 /* WeatherScreenView.swift */,
+				13C1F68326C3228C00256577 /* WeatherCurrentView.swift */,
+				13C1F68826C3CF9000256577 /* WeatherHourlyView.swift */,
+				13FFB9EC26AD833F00F35285 /* WeatherDailyView.swift */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -301,10 +514,12 @@
 				13BDE63F26923867004A6AB7 /* Sources */,
 				13BDE64026923867004A6AB7 /* Frameworks */,
 				13BDE64126923867004A6AB7 /* Resources */,
+				13C1F6F626C4912A00256577 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				13C1F6F126C4912A00256577 /* PBXTargetDependency */,
 			);
 			name = "Final Project";
 			packageProductDependencies = (
@@ -335,6 +550,23 @@
 			productReference = 13BDE6542692386C004A6AB7 /* Final ProjectTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		13C1F6E126C4912700256577 /* Agronom WidgetExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 13C1F6F326C4912A00256577 /* Build configuration list for PBXNativeTarget "Agronom WidgetExtension" */;
+			buildPhases = (
+				13C1F6DE26C4912700256577 /* Sources */,
+				13C1F6DF26C4912700256577 /* Frameworks */,
+				13C1F6E026C4912700256577 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Agronom WidgetExtension";
+			productName = "Agronom WidgetExtension";
+			productReference = 13C1F6E226C4912700256577 /* Agronom WidgetExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -350,6 +582,9 @@
 					13BDE6532692386C004A6AB7 = {
 						CreatedOnToolsVersion = 12.5.1;
 						TestTargetID = 13BDE64226923867004A6AB7;
+					};
+					13C1F6E126C4912700256577 = {
+						CreatedOnToolsVersion = 12.5.1;
 					};
 				};
 			};
@@ -372,6 +607,7 @@
 			targets = (
 				13BDE64226923867004A6AB7 /* Final Project */,
 				13BDE6532692386C004A6AB7 /* Final ProjectTests */,
+				13C1F6E126C4912700256577 /* Agronom WidgetExtension */,
 			);
 		};
 /* End PBXProject section */
@@ -394,6 +630,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		13C1F6E026C4912700256577 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				13C1F6EC26C4912A00256577 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -401,29 +645,52 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				133B270426BB12E300052657 /* WeatherListViewModel.swift in Sources */,
+				133B270426BB12E300052657 /* WeatherViewModel.swift in Sources */,
+				13C1F68426C3228C00256577 /* WeatherCurrentView.swift in Sources */,
+				13C1F6A026C459DD00256577 /* SprayersListPresenter.swift in Sources */,
 				13B1981C26BDD0C8008C8094 /* ActivityIndicator.swift in Sources */,
+				13921F3126CC2366006D07D5 /* ICalculatorScreenView.swift in Sources */,
+				13C1F69226C4509C00256577 /* SprayersListConfigurator.swift in Sources */,
+				13921F3D26CC251A006D07D5 /* ICalculatorScreenPresenter.swift in Sources */,
 				13B1981026BDCB4C008C8094 /* Navigator.swift in Sources */,
 				137B12B926BDD5990033622C /* ContainerModel.swift in Sources */,
-				13FFB9F226AD927800F35285 /* WeatherListInteractor.swift in Sources */,
+				13C1F68B26C4455D00256577 /* GlobalStrings.swift in Sources */,
+				13FFB9F226AD927800F35285 /* WeatherInteractor.swift in Sources */,
 				13B1981A26BDD09C008C8094 /* LoaderView.swift in Sources */,
-				13FFB9F926AD955100F35285 /* WeatherListPresenter.swift in Sources */,
-				137B12F826BEA2F10033622C /* IWeatherListScreenView.swift in Sources */,
-				137B12F326BE9BAB0033622C /* IWeatherListInteractor.swift in Sources */,
-				137B12F626BEA1F00033622C /* IWeatherListPresenter.swift in Sources */,
+				13C1F69E26C4557100256577 /* SprayerListViewModel.swift in Sources */,
+				13FFB9F926AD955100F35285 /* WeatherPresenter.swift in Sources */,
+				13C1F69826C4519900256577 /* ISprayersListPresenter.swift in Sources */,
+				137B12F826BEA2F10033622C /* IWeatherScreenView.swift in Sources */,
+				13921F3526CC2396006D07D5 /* CalculatorScreenViewModel.swift in Sources */,
+				137B12F326BE9BAB0033622C /* IWeatherInteractor.swift in Sources */,
+				13C1F69C26C4545D00256577 /* IPresenter.swift in Sources */,
+				137B12F626BEA1F00033622C /* IWeatherPresenter.swift in Sources */,
+				13C1F69426C450EB00256577 /* ISprayersListScreenView.swift in Sources */,
 				13B1981226BDCC07008C8094 /* ModuleConfig.swift in Sources */,
-				13BDE678269317D0004A6AB7 /* WeatherListScreenView.swift in Sources */,
-				13FFB9ED26AD833F00F35285 /* WeatherListItem.swift in Sources */,
+				13BDE678269317D0004A6AB7 /* WeatherScreenView.swift in Sources */,
+				13C1F69A26C451AA00256577 /* ISprayersListInteractor.swift in Sources */,
+				13921F2F26CC2112006D07D5 /* CalculatorScreenView.swift in Sources */,
+				13921F3B26CC2498006D07D5 /* CalculatorScreenInteractor.swift in Sources */,
+				13FFB9ED26AD833F00F35285 /* WeatherDailyView.swift in Sources */,
 				137B130926C05F520033622C /* ITabBarScreenInteractor.swift in Sources */,
+				13921F3926CC2485006D07D5 /* ICalculatorScreenInteractor.swift in Sources */,
 				137B130126C05DCC0033622C /* TabBarScreenView.swift in Sources */,
+				13C1F69026C4505700256577 /* SprayersListScreenView.swift in Sources */,
 				13BDE64726923867004A6AB7 /* Final_ProjectApp.swift in Sources */,
+				13C1F6F926C4F6EF00256577 /* WidgetWeather.swift in Sources */,
 				137B130D26C060B50033622C /* TabBarViewModel.swift in Sources */,
 				137B130626C05ED70033622C /* ITabBarScreenView.swift in Sources */,
+				13C1F6EF26C4912A00256577 /* Agronom_Widget.intentdefinition in Sources */,
+				13921F3F26CC2529006D07D5 /* CalculatorScreenPresenter.swift in Sources */,
 				137B130B26C05F810033622C /* TabBarScreenInteractor.swift in Sources */,
+				13921F3726CC23AE006D07D5 /* CalculatorScreenConfigurator.swift in Sources */,
 				13B1981726BDCD1C008C8094 /* ContainerView.swift in Sources */,
+				13C1F68726C3263E00256577 /* Date+Format.swift in Sources */,
+				13C1F68926C3CF9000256577 /* WeatherHourlyView.swift in Sources */,
 				13BDE67B269318FE004A6AB7 /* ProfileScreenView.swift in Sources */,
-				13B1981426BDCC96008C8094 /* WeatherListConfigurator.swift in Sources */,
+				13B1981426BDCC96008C8094 /* WeatherConfigurator.swift in Sources */,
 				137B130426C05E630033622C /* TabBarScreenConfigurator.swift in Sources */,
+				13C1F6A226C45D9F00256577 /* SprayersListInteractor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -435,6 +702,17 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		13C1F6DE26C4912700256577 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				13C1F6FA26C4F7B400256577 /* WidgetWeather.swift in Sources */,
+				13C1F6EE26C4912A00256577 /* Agronom_Widget.intentdefinition in Sources */,
+				13C1F6FC26C5068A00256577 /* Date+Format.swift in Sources */,
+				13C1F6E926C4912700256577 /* Agronom_Widget.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -442,6 +720,11 @@
 			isa = PBXTargetDependency;
 			target = 13BDE64226923867004A6AB7 /* Final Project */;
 			targetProxy = 13BDE6552692386C004A6AB7 /* PBXContainerItemProxy */;
+		};
+		13C1F6F126C4912A00256577 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 13C1F6E126C4912700256577 /* Agronom WidgetExtension */;
+			targetProxy = 13C1F6F026C4912A00256577 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -565,8 +848,10 @@
 		13BDE6692692386C004A6AB7 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Final Project/Final Project.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"Final Project/Preview Content\"";
 				DEVELOPMENT_TEAM = GF3U88C7F2;
@@ -577,7 +862,8 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.alexeybolv.Final-Project";
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.alexeybolv.agronom;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -587,8 +873,10 @@
 		13BDE66A2692386C004A6AB7 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Final Project/Final Project.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"Final Project/Preview Content\"";
 				DEVELOPMENT_TEAM = GF3U88C7F2;
@@ -599,7 +887,8 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.alexeybolv.Final-Project";
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.alexeybolv.agronom;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -650,6 +939,50 @@
 			};
 			name = Release;
 		};
+		13C1F6F426C4912A00256577 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = "Agronom WidgetExtension.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = GF3U88C7F2;
+				INFOPLIST_FILE = "Agronom Widget/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.alexeybolv.agronom.Agronom-Widget";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		13C1F6F526C4912A00256577 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = "Agronom WidgetExtension.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = GF3U88C7F2;
+				INFOPLIST_FILE = "Agronom Widget/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.alexeybolv.agronom.Agronom-Widget";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -676,6 +1009,15 @@
 			buildConfigurations = (
 				13BDE66C2692386C004A6AB7 /* Debug */,
 				13BDE66D2692386C004A6AB7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		13C1F6F326C4912A00256577 /* Build configuration list for PBXNativeTarget "Agronom WidgetExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				13C1F6F426C4912A00256577 /* Debug */,
+				13C1F6F526C4912A00256577 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

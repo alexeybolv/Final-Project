@@ -7,26 +7,26 @@
 
 import Foundation
 
-import WeatherAPI
-
 import Moya
+import AgronomAPI
+import WeatherAPI
 
 public struct NetworkAdapter {
 
-    public static var provider: MoyaProvider<MoyaManager> {
+    public static var provider: MoyaProvider<MoyaWeatherManager> {
         if ProcessInfo.processInfo.environment["XCTestConfigurationFilePath"] == nil {
             #if DEBUG
             let plugins: [PluginType] = [NetworkLoggerPlugin(configuration: .init(formatter: .init(responseData: JSONResponseDataFormatter),logOptions: .verbose))]
             #else
             let plugins: [PluginType] = []
             #endif
-            return MoyaProvider<MoyaManager>(plugins:plugins)
+            return MoyaProvider<MoyaWeatherManager>(plugins:plugins)
         } else {
-            return MoyaProvider<MoyaManager>(stubClosure: MoyaProvider.immediatelyStub)
+            return MoyaProvider<MoyaWeatherManager>(stubClosure: MoyaProvider.immediatelyStub)
         }
     }
 
-    public static func request(target: MoyaManager, success successCallback: @escaping (Response) -> Void, error errorCallback: @escaping (Swift.Error) -> Void, failure failureCallback: @escaping (String) -> Void) {
+    public static func request(target: MoyaWeatherManager, success successCallback: @escaping (Response) -> Void, error errorCallback: @escaping (Swift.Error) -> Void, failure failureCallback: @escaping (String) -> Void) {
 
         provider.request(target) { (result) in
             switch result {
@@ -38,11 +38,30 @@ public struct NetworkAdapter {
                     errorCallback(error)
                 }
             case .failure(let error):
-                var errorString = error.localizedDescription
-                if errorString == "The Internet connection appears to be offline." {
-                    errorString = "Проверьте наличие интернет соединения."
+                failureCallback(error.localizedDescription)
+            }
+        }
+    }
+
+    // MARK: - Mock
+
+    public static var mockProvider: MoyaProvider<MoyaAgronomManager> {
+        return MoyaProvider<MoyaAgronomManager>(stubClosure: MoyaProvider.immediatelyStub, plugins: [NetworkLoggerPlugin(configuration: .init(formatter: .init(responseData: JSONResponseDataFormatter),logOptions: .verbose))])
+    }
+
+    public static func mockRequest(target: MoyaAgronomManager, success successCallback: @escaping (Response) -> Void, error errorCallback: @escaping (Swift.Error) -> Void, failure failureCallback: @escaping (String) -> Void) {
+
+        mockProvider.request(target) { (result) in
+            switch result {
+            case .success(let response):
+                if response.statusCode >= 200 && response.statusCode <= 300 {
+                    successCallback(response)
+                } else {
+                    let error = NSError(domain:"com.vsemenchenko.networkLayer", code:0, userInfo:[NSLocalizedDescriptionKey: "Parsing Error"])
+                    errorCallback(error)
                 }
-                failureCallback(errorString)
+            case .failure(let error):
+                failureCallback(error.localizedDescription)
             }
         }
     }
