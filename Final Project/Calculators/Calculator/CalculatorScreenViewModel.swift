@@ -13,11 +13,12 @@ class CalculatorScreenViewModel: ObservableObject, IModel {
 
     var listener: IContainer?
 
-    @Published var nozzlesList: [Nozzle] = [Nozzle]()
+    var nozzlesList: [Nozzle] = [Nozzle]()
+    @Published var sortedNozzlesList: [Nozzle] = [Nozzle]()
 
     var data: [Nozzle] {
         get {
-            return nozzlesList
+            return sortedNozzlesList
         }
     }
 
@@ -27,7 +28,12 @@ class CalculatorScreenViewModel: ObservableObject, IModel {
         }
     }
 
+    func sortNozzles(consumption: Double, speed: Double, width: Double) {
+        sortedNozzlesList = nozzlesList.filter({ speed > $0.minSpeed && speed < $0.maxSpeed && $0.consumption > consumption })
+    }
+
     private func update(nozzlesList: [Nozzle]) {
         self.nozzlesList = nozzlesList
+        self.sortedNozzlesList = nozzlesList
     }
 }

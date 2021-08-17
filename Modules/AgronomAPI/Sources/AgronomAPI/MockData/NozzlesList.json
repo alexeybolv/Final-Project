@@ -5,7 +5,7 @@
         "name": "Nozzle 0",
         "minSpeed": 5,
         "maxSpeed": 20,
-        "consumption": 5
+        "consumption": 500
     },
     {
         "id": 1,
@@ -13,6 +13,22 @@
         "name": "Nozzle 1",
         "minSpeed": 10,
         "maxSpeed": 20,
-        "consumption": 7
+        "consumption": 800
+    },
+    {
+        "id": 2,
+        "sprayerId": 0,
+        "name": "Nozzle 2",
+        "minSpeed": 8,
+        "maxSpeed": 20,
+        "consumption": 660
+    },
+    {
+        "id": 3,
+        "sprayerId": 0,
+        "name": "Nozzle 3",
+        "minSpeed": 5,
+        "maxSpeed": 16,
+        "consumption": 400
     }
 ]

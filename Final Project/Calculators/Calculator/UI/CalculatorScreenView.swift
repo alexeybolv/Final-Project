@@ -11,7 +11,7 @@ struct CalculatorScreenView: View {
 
     var output: ICalculatorScreenInteractor?
     var container: IContainer?
-    @ObservedObject var model: CalculatorScreenViewModel =  CalculatorScreenViewModel()
+    @ObservedObject var model: CalculatorScreenViewModel = CalculatorScreenViewModel()
 
     @State private var consumption: Double = 500
     @State private var speed: Double = 10
@@ -19,14 +19,42 @@ struct CalculatorScreenView: View {
 
     var body: some View {
         VStack {
-            Text("\(consumption) л/га")
-            Slider(value: $consumption, in: 0...1000)
+            Spacer(minLength: 16)
+            HStack {
+                Image(systemName: "minus.rectangle.portrait")
+                VStack {
+                    Text("\(Int(consumption)) л/га")
+                    Slider(value: $consumption, in: 0...1000)
+                        .onChange(of: consumption) { _ in
+                            model.sortNozzles(consumption: consumption, speed: speed, width: width)
+                        }
+                }
+                Image(systemName: "plus.rectangle.portrait")
+            }
 
-            Text("\(speed) км/ч")
-            Slider(value: $speed, in: 5...25)
+            HStack {
+                Image(systemName: "minus.rectangle.portrait")
+                VStack {
+                    Text("\(Int(speed)) км/ч")
+                    Slider(value: $speed, in: 5...25)
+                        .onChange(of: speed) { _ in
+                            model.sortNozzles(consumption: consumption, speed: speed, width: width)
+                        }
+                }
+                Image(systemName: "plus.rectangle.portrait")
+            }
 
-            Text("\(width) м")
-            Slider(value: $width, in: 2...24)
+            HStack {
+                Image(systemName: "minus.rectangle.portrait")
+                VStack {
+                    Text("\(Int(width)) м")
+                    Slider(value: $width, in: 2...24)
+                        .onChange(of: width) { _ in
+                            model.sortNozzles(consumption: consumption, speed: speed, width: width)
+                        }
+                }
+                Image(systemName: "plus.rectangle.portrait")
+            }
 
             Spacer()
 
