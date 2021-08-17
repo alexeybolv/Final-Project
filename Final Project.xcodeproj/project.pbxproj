@@ -19,6 +19,7 @@
 		137B130926C05F520033622C /* ITabBarScreenInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 137B130826C05F520033622C /* ITabBarScreenInteractor.swift */; };
 		137B130B26C05F810033622C /* TabBarScreenInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 137B130A26C05F810033622C /* TabBarScreenInteractor.swift */; };
 		137B130D26C060B50033622C /* TabBarViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 137B130C26C060B50033622C /* TabBarViewModel.swift */; };
+		13921F2F26CC2112006D07D5 /* CalculatorScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13921F2E26CC2112006D07D5 /* CalculatorScreenView.swift */; };
 		13A406C0269AFCB20016BDF7 /* Moya in Frameworks */ = {isa = PBXBuildFile; productRef = 13A406BF269AFCB20016BDF7 /* Moya */; };
 		13B1981026BDCB4C008C8094 /* Navigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13B1980F26BDCB4C008C8094 /* Navigator.swift */; };
 		13B1981226BDCC07008C8094 /* ModuleConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13B1981126BDCC07008C8094 /* ModuleConfig.swift */; };
@@ -107,6 +108,7 @@
 		137B130826C05F520033622C /* ITabBarScreenInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ITabBarScreenInteractor.swift; sourceTree = "<group>"; };
 		137B130A26C05F810033622C /* TabBarScreenInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarScreenInteractor.swift; sourceTree = "<group>"; };
 		137B130C26C060B50033622C /* TabBarViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewModel.swift; sourceTree = "<group>"; };
+		13921F2E26CC2112006D07D5 /* CalculatorScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorScreenView.swift; sourceTree = "<group>"; };
 		13B1980F26BDCB4C008C8094 /* Navigator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Navigator.swift; sourceTree = "<group>"; };
 		13B1981126BDCC07008C8094 /* ModuleConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModuleConfig.swift; sourceTree = "<group>"; };
 		13B1981326BDCC96008C8094 /* WeatherConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherConfigurator.swift; sourceTree = "<group>"; };
@@ -241,6 +243,22 @@
 			path = Interactor;
 			sourceTree = "<group>";
 		};
+		13921F2C26CC20E8006D07D5 /* Calculator */ = {
+			isa = PBXGroup;
+			children = (
+				13921F2D26CC20F6006D07D5 /* UI */,
+			);
+			path = Calculator;
+			sourceTree = "<group>";
+		};
+		13921F2D26CC20F6006D07D5 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				13921F2E26CC2112006D07D5 /* CalculatorScreenView.swift */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
 		13B1981826BDD072008C8094 /* CommonUI */ = {
 			isa = PBXGroup;
 			children = (
@@ -347,6 +365,7 @@
 			isa = PBXGroup;
 			children = (
 				13C1F68D26C44FF300256577 /* SprayersList */,
+				13921F2C26CC20E8006D07D5 /* Calculator */,
 			);
 			path = Calculators;
 			sourceTree = "<group>";
@@ -610,6 +629,7 @@
 				13B1981226BDCC07008C8094 /* ModuleConfig.swift in Sources */,
 				13BDE678269317D0004A6AB7 /* WeatherScreenView.swift in Sources */,
 				13C1F69A26C451AA00256577 /* ISprayersListInteractor.swift in Sources */,
+				13921F2F26CC2112006D07D5 /* CalculatorScreenView.swift in Sources */,
 				13FFB9ED26AD833F00F35285 /* WeatherDailyView.swift in Sources */,
 				137B130926C05F520033622C /* ITabBarScreenInteractor.swift in Sources */,
 				137B130126C05DCC0033622C /* TabBarScreenView.swift in Sources */,
