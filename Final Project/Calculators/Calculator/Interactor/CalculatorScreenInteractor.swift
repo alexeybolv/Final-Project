@@ -25,7 +25,7 @@ class CalculatorScreenInteractor: ICalculatorScreenInteractor {
 
     func getNozzlesList() {
         output?.showLoading()
-        NetworkAdapter.mockRequest(target: .getSprayers) { response in
+        NetworkAdapter.mockRequest(target: .getNozzles) { response in
             self.output?.hideLoading()
             do {
                 let nozzlesList = try JSONDecoder().decode([Nozzle].self, from: response.data)

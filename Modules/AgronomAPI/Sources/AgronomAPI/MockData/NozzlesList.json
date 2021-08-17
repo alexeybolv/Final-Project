@@ -1,0 +1,18 @@
+[
+    {
+        "id": 0,
+        "sprayerId": 0,
+        "name": "Nozzle 0",
+        "minSpeed": 5,
+        "maxSpeed": 20,
+        "consumption": 5
+    },
+    {
+        "id": 1,
+        "sprayerId": 0,
+        "name": "Nozzle 1",
+        "minSpeed": 10,
+        "maxSpeed": 20,
+        "consumption": 7
+    }
+]

@@ -11,6 +11,7 @@ import Moya
 
 public enum MoyaAgronomManager {
     case getSprayers
+    case getNozzles
 }
 
 extension MoyaAgronomManager: TargetType {
@@ -23,6 +24,8 @@ extension MoyaAgronomManager: TargetType {
         switch self {
         case .getSprayers:
             return "/data/sprayers"
+        case .getNozzles:
+            return "/data/nozzles"
         }
     }
 
@@ -32,21 +35,21 @@ extension MoyaAgronomManager: TargetType {
 
     public var method: Moya.Method {
         switch self {
-        case .getSprayers:
+        case .getSprayers, .getNozzles:
             return .get
         }
     }
 
     public var parameters: [String: Any]? {
         switch self {
-        case .getSprayers:
+        case .getSprayers, .getNozzles:
             return nil
         }
     }
 
     public var task: Task {
         switch self {
-        case .getSprayers:
+        case .getSprayers, .getNozzles:
             return .requestParameters(parameters: parameters ?? [:], encoding: URLEncoding.default)
         }
     }
@@ -55,6 +58,8 @@ extension MoyaAgronomManager: TargetType {
         switch self {
         case .getSprayers:
             return MockService().data(mockKey: .sprayersList)
+        case .getNozzles:
+            return MockService().data(mockKey: .nozzlesList)
         }
     }
 }

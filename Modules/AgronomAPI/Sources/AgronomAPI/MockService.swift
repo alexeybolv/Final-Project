@@ -11,6 +11,7 @@ struct MockService {
 
     enum MockKeys: String {
         case sprayersList = "SprayersList"
+        case nozzlesList = "NozzlesList"
     }
 
     func data(mockKey: MockKeys) -> Data {
